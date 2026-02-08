@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Zyshaire - Insights</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Manrope", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        h1, h2, h3, h4, h5, h6, .font-display { font-family: 'Space Grotesk', sans-serif; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 flex flex-col min-h-screen">
+<!-- Navbar -->
+<header class="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex h-16 items-center justify-between">
+<div class="flex items-center gap-2 text-slate-900 dark:text-white">
+<div class="size-6 text-primary">
+<span class="material-symbols-outlined text-3xl">api</span>
+</div>
+<h2 class="font-display text-xl font-bold tracking-tight">Zyshaire</h2>
+</div>
+<nav class="hidden md:flex flex-1 justify-center gap-8">
+<a class="font-display text-sm font-medium hover:text-primary transition-colors" href="#">Solutions</a>
+<a class="font-display text-sm font-medium text-primary transition-colors" href="#">Insights</a>
+<a class="font-display text-sm font-medium hover:text-primary transition-colors" href="#">About</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="font-display hidden sm:flex h-9 items-center justify-center rounded-lg bg-primary px-4 text-sm font-bold text-white shadow-sm hover:bg-primary/90 transition-colors">
+                        Get Started
+                    </button>
+<button class="sm:hidden p-2 text-slate-600 dark:text-slate-300">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="py-12 md:py-20 bg-white dark:bg-slate-900">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid gap-10 lg:grid-cols-2 lg:items-center">
+<div class="order-2 lg:order-1 flex flex-col gap-6">
+<div class="flex items-center gap-3">
+<span class="inline-flex items-center rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary ring-1 ring-inset ring-primary/20">Featured Insight</span>
+<span class="text-sm text-slate-500 dark:text-slate-400 font-body">5 min read</span>
+</div>
+<h1 class="font-display text-4xl font-bold leading-tight tracking-tight text-slate-900 dark:text-white sm:text-5xl lg:text-6xl">
+                            Scaling AI: How to Measure ROI in Enterprise Systems
+                        </h1>
+<p class="font-body text-lg text-slate-600 dark:text-slate-300">
+                            Learn the frameworks top CTOs are using to validate AI investments and drive measurable outcomes in 2024. We break down the key metrics that actually matter.
+                        </p>
+<div class="pt-2">
+<button class="font-display inline-flex h-12 items-center justify-center gap-2 rounded-lg bg-primary px-6 text-base font-bold text-white shadow-lg shadow-primary/20 hover:bg-primary/90 transition-all hover:translate-y-[-2px]">
+                                Read Article
+                                <span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<div class="relative aspect-video w-full overflow-hidden rounded-xl bg-slate-100 shadow-2xl dark:bg-slate-800" data-alt="Abstract visualization of data analytics scaling up" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCpQtJyAdOdeZUJBsXOj_RiNQiVZDdpBAWwQZW17ZCscXFZiAs9OlVayFUTCrvqR9NhJi8mtOCRZmduxW6RokHSAnt3dI5fpx6SjBcQtGU7nZViLD8jGjJfN9v6TdonjZLlWh6DKOX6Zn6THZBTNs2o1nSB0XN0aizAtliyXnd4UmnKas0PCiJMB5IBGiT01cbuXCs7xM108R9DmjZd2mEVAZMPb3RHcGNhloIQob-iBmnnbo5xhtRGyMKsYuJY6-_r4EciyL1XyPk'); background-size: cover; background-position: center;">
+<div class="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent mix-blend-multiply"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Topic Filter -->
+<div class="sticky top-16 z-40 border-b border-slate-200 dark:border-slate-800 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur supports-[backdrop-filter]:bg-background-light/60">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center gap-3 overflow-x-auto py-4 no-scrollbar">
+<button class="whitespace-nowrap rounded-full bg-slate-900 dark:bg-white px-5 py-2 font-display text-sm font-medium text-white dark:text-slate-900 shadow-sm transition-colors">
+                        All
+                    </button>
+<button class="whitespace-nowrap rounded-full bg-white dark:bg-slate-800 px-5 py-2 font-display text-sm font-medium text-slate-600 dark:text-slate-300 shadow-sm hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-primary transition-colors ring-1 ring-slate-200 dark:ring-slate-700">
+                        AI Workflows
+                    </button>
+<button class="whitespace-nowrap rounded-full bg-white dark:bg-slate-800 px-5 py-2 font-display text-sm font-medium text-slate-600 dark:text-slate-300 shadow-sm hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-primary transition-colors ring-1 ring-slate-200 dark:ring-slate-700">
+                        Enterprise Engineering
+                    </button>
+<button class="whitespace-nowrap rounded-full bg-white dark:bg-slate-800 px-5 py-2 font-display text-sm font-medium text-slate-600 dark:text-slate-300 shadow-sm hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-primary transition-colors ring-1 ring-slate-200 dark:ring-slate-700">
+                        SaaS Optimization
+                    </button>
+<button class="whitespace-nowrap rounded-full bg-white dark:bg-slate-800 px-5 py-2 font-display text-sm font-medium text-slate-600 dark:text-slate-300 shadow-sm hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-primary transition-colors ring-1 ring-slate-200 dark:ring-slate-700">
+                        Case Studies
+                    </button>
+</div>
+</div>
+</div>
+<!-- Latest Insights Grid -->
+<section class="py-16">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="mb-10 flex items-center justify-between">
+<h2 class="font-display text-2xl font-bold text-slate-900 dark:text-white sm:text-3xl">Latest Insights</h2>
+<a class="hidden sm:flex items-center gap-1 text-sm font-semibold text-primary hover:text-primary/80 transition-colors font-display" href="#">
+                        View Archive <span class="material-symbols-outlined text-lg">arrow_right_alt</span>
+</a>
+</div>
+<div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+<!-- Article Card 1 -->
+<article class="group flex flex-col rounded-xl bg-white dark:bg-slate-800 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md ring-1 ring-slate-200 dark:ring-slate-700 overflow-hidden">
+<div class="aspect-[16/9] w-full bg-slate-100 overflow-hidden" data-alt="Abstract network connection nodes" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA6XYfMvbtJXqJWDB6ORlXPIe3yeN19Bn0AldHrp1rO9QFwwEyTI31dEdHs6hVAZipw1WjmuQk57v_mSqBHOF4bfxwCde26PWOG0a78g3tqlr2Y3wtbP5mZtErHoidscLaEDpA_vyxJNBMQ3HfiVfrw-8j7pOs8BxEKL42EhnjeMzsN482hb7ajFrUipTi-eSzGYkEDIWnW8p_Ku_RkKFmcmZcEaAiSE7Kyfr9aq137Cz199q6OqXEux4i9-kplL48bw9ZJzZvLlUs'); background-size: cover; background-position: center;">
+</div>
+<div class="flex flex-1 flex-col p-6">
+<div class="mb-3 flex items-center justify-between">
+<span class="text-xs font-semibold uppercase tracking-wider text-primary font-display">AI Workflows</span>
+<span class="text-xs text-slate-400 font-body">4 min read</span>
+</div>
+<h3 class="mb-3 font-display text-xl font-bold leading-tight text-slate-900 dark:text-white group-hover:text-primary transition-colors">
+                                5 Automations Every CTO Needs in 2024
+                            </h3>
+<p class="mb-4 flex-1 font-body text-sm leading-relaxed text-slate-500 dark:text-slate-400">
+                                Discover the essential automated workflows that are redefining efficiency in modern tech stacks and reducing operational overhead.
+                            </p>
+<div class="flex items-center gap-2 pt-4 border-t border-slate-100 dark:border-slate-700">
+<div class="size-8 rounded-full bg-slate-200" data-alt="Portrait of Sarah Jenkins" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAywEP75yHj__kkgND1xX0XKmSdhXP3NxDDsL8KwQTC6icp5LnxihShernCkOTnmzrz00udxarieVhUItFkZuln3lvgrPlZaVUS832DSYntYkwoFKRKv91aLO6qmYZIQnt2wK-l6P2MVn8eKA8PVE2GLZanl4kNsGEpdU-cn5usDcxGDuGpiqGD7H1Sx2r6Fwmb4T11jF7o74aq4uYyytMCm3bHf2q6e_FaW-iNCWz-wZkQoBZY3qp_yt6PuwLYGVZAGnQVlogkPCE'); background-size: cover;"></div>
+<div class="text-xs">
+<p class="font-bold text-slate-900 dark:text-white">Sarah Jenkins</p>
+<p class="text-slate-500">VP of Engineering</p>
+</div>
+</div>
+</div>
+</article>
+<!-- Article Card 2 -->
+<article class="group flex flex-col rounded-xl bg-white dark:bg-slate-800 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md ring-1 ring-slate-200 dark:ring-slate-700 overflow-hidden">
+<div class="aspect-[16/9] w-full bg-slate-100 overflow-hidden" data-alt="Futuristic software code on screen" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDl1KRhJY4JTHBPHY4cGjRfmx-sTsOTG0t32kVfHSIrMCHi-KWGAVog6OFo0dixMbSe6cJ58Yf3TH5PPxH29Zb6fxL52sKMb9usZg7ELLoZrMx278LvuncZvYPWpvgerIkst-SrfoETvvEfpESmjsqZccTG7UBYDeiKLja9_UX3_EgVEMZyzYNEZjhCE68TBTzyx0B-Q_aHWjqIom0faXAERVqNDnPCiWb5SoMB5mr53dhbfhH-IHC9gFNO4XNOnmIxWifGwZoJ5AQ'); background-size: cover; background-position: center;">
+</div>
+<div class="flex flex-1 flex-col p-6">
+<div class="mb-3 flex items-center justify-between">
+<span class="text-xs font-semibold uppercase tracking-wider text-primary font-display">SaaS Optimization</span>
+<span class="text-xs text-slate-400 font-body">6 min read</span>
+</div>
+<h3 class="mb-3 font-display text-xl font-bold leading-tight text-slate-900 dark:text-white group-hover:text-primary transition-colors">
+                                The Future of No-Code in SaaS Development
+                            </h3>
+<p class="mb-4 flex-1 font-body text-sm leading-relaxed text-slate-500 dark:text-slate-400">
+                                Is no-code the future or just a phase? We explore how enterprise SaaS platforms are integrating visual development tools.
+                            </p>
+<div class="flex items-center gap-2 pt-4 border-t border-slate-100 dark:border-slate-700">
+<div class="size-8 rounded-full bg-slate-200" data-alt="Portrait of David Chen" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDq98UXFMDx-IQ_hQ1YyY_1N3W4ZA1dQhzd6G09qAuTYrC7OchFMN9aA46zdCB29h1a2xYSmNneGCUzddaiqQZuafNxEsEr5vIMYXp9huMq0Fr0VT24O3T_SboZkP0ShEFi7gHUZr3GzJDAegkJ9i-6dI9kbPV7zOllNdb8RN-l2IJPG4VLACdF3d98W2HdGuki7vWfhc2iyIR8Pg5dRzFZy9ZQvixixIUMbyxo9isdGBtfnChLsbVLKr0jDLjMn0YSNq1t3xP2IhQ'); background-size: cover;"></div>
+<div class="text-xs">
+<p class="font-bold text-slate-900 dark:text-white">David Chen</p>
+<p class="text-slate-500">Lead Product Mgr</p>
+</div>
+</div>
+</div>
+</article>
+<!-- Article Card 3 -->
+<article class="group flex flex-col rounded-xl bg-white dark:bg-slate-800 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md ring-1 ring-slate-200 dark:ring-slate-700 overflow-hidden">
+<div class="aspect-[16/9] w-full bg-slate-100 overflow-hidden" data-alt="Growth chart trending upwards" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBmrPxdYOTc2Ejp6AO54ZeZck1tYZ9B31vwUcxrPOH2B_qYp9grrs6ztNCB1GsEoQxvQtqabJEySyavt2B0C6HrU59XduxTfLwjQbUoiNDAvvvrPDTUZJqa5TuLaETDM1lJvhVSuIP7FpOm4AzaBhwROLatHxQJ3GnPh4o_44gRRwZYBoa7claUcaC6DmCkyglbkUW5411mhgGPAFg1rZW72hr0PVPGTDrh0R4MNXeNvqcDIe9KxuxQ5ehATXkhqGgFOVwIshsp_kQ'); background-size: cover; background-position: center;">
+</div>
+<div class="flex flex-1 flex-col p-6">
+<div class="mb-3 flex items-center justify-between">
+<span class="text-xs font-semibold uppercase tracking-wider text-primary font-display">Case Study</span>
+<span class="text-xs text-slate-400 font-body">3 min read</span>
+</div>
+<h3 class="mb-3 font-display text-xl font-bold leading-tight text-slate-900 dark:text-white group-hover:text-primary transition-colors">
+                                Success Story: 300% Growth for Client X
+                            </h3>
+<p class="mb-4 flex-1 font-body text-sm leading-relaxed text-slate-500 dark:text-slate-400">
+                                See how we helped a mid-size fintech company overhaul their legacy systems to achieve record-breaking growth.
+                            </p>
+<div class="flex items-center gap-2 pt-4 border-t border-slate-100 dark:border-slate-700">
+<div class="size-8 rounded-full bg-slate-200" data-alt="Portrait of Zyshaire Team" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuABt8xoKkpY8aXHEir09-ZPUKjU4n6F_OtVtGQP2INqztujyO0921Fda0512OC_fANNZFCIM2JG3R_7pQODXcbn2v5GSSzrSu9H59IEe-YDoZYFUTR1yKNL-CdXyaVnLu-jrwK37RjWHPwStC5fNCu3JbEpRWWp_zzqvGMZ2awAlBjAonty-x0qLkaZThxPxSZfus_Rv1tftAjr4DSiXHzho7fEppoyaXa8aKeNWU2546RXQzATDIqdid8NypZqdS7uLtt73aaGyY0'); background-size: cover;"></div>
+<div class="text-xs">
+<p class="font-bold text-slate-900 dark:text-white">Zyshaire Team</p>
+<p class="text-slate-500">Editorial</p>
+</div>
+</div>
+</div>
+</article>
+<!-- Article Card 4 -->
+<article class="group flex flex-col rounded-xl bg-white dark:bg-slate-800 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md ring-1 ring-slate-200 dark:ring-slate-700 overflow-hidden">
+<div class="aspect-[16/9] w-full bg-slate-100 overflow-hidden" data-alt="Cloud computing server room" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCm9COxnYvYqmMu5xMoq_Nb59LYtBtreS_thAihHTqc5ITyimdWteOLoJO7kA8QtBANtVyWLTMaU4_tvoJT0YmWgDh749YiNd3m-GCB47hfykvhFKEL7MkF-zTbtiiR5aV6d8zttK-d-yRrRF42cW_VNCDQxVDRf1nFjIjX2OqUVfOh8A7bxrIfXfATOaEMnopvkaEjWaKF0SPGHkfmD1MZOtreZ_vr3yqxNqwrDsAB4xHDLPp6nBNHSZici9TOMJx3DcWNunijsyg'); background-size: cover; background-position: center;">
+</div>
+<div class="flex flex-1 flex-col p-6">
+<div class="mb-3 flex items-center justify-between">
+<span class="text-xs font-semibold uppercase tracking-wider text-primary font-display">Enterprise Engineering</span>
+<span class="text-xs text-slate-400 font-body">7 min read</span>
+</div>
+<h3 class="mb-3 font-display text-xl font-bold leading-tight text-slate-900 dark:text-white group-hover:text-primary transition-colors">
+                                Why Microservices Fail at Scale
+                            </h3>
+<p class="mb-4 flex-1 font-body text-sm leading-relaxed text-slate-500 dark:text-slate-400">
+                                Microservices aren't a silver bullet. We discuss common pitfalls in distributed architecture and how to avoid them.
+                            </p>
+<div class="flex items-center gap-2 pt-4 border-t border-slate-100 dark:border-slate-700">
+<div class="size-8 rounded-full bg-slate-200" data-alt="Portrait of Marcus Lee" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAPx8eeLi3SK4EgiP_Gx_qY_1bUrjyUDn1LFHqFe2hdiFW9xL5tDuULGhep77T8zMtzQ7AeDbG97OPznDAQRH1Zu1bGXt2oCHCWZtGPlbN_0iQKvE42VMlUxVQ4aNAyzuawWtIuiQ7sef3cDot2HJ7g7yrUEfFHv2RJ5JK6xi1LkXBdWjuzfety2SuhRIfbQOWbKWHxqmfeHJ8KFOHNbnYOfQ0YI3r8Lc6lrHPvJ9IFOutQrd0H7P92FMD4ZdEQEj5Cix9XAn-KanM'); background-size: cover;"></div>
+<div class="text-xs">
+<p class="font-bold text-slate-900 dark:text-white">Marcus Lee</p>
+<p class="text-slate-500">Senior Architect</p>
+</div>
+</div>
+</div>
+</article>
+<!-- Article Card 5 -->
+<article class="group flex flex-col rounded-xl bg-white dark:bg-slate-800 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md ring-1 ring-slate-200 dark:ring-slate-700 overflow-hidden">
+<div class="aspect-[16/9] w-full bg-slate-100 overflow-hidden" data-alt="Person interacting with holographic data interface" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD6R6TpvqOry11uVMmFBa85LviuCnGdtvYZHePSr2ACKOwoG5jTsoSEKqcOUgZ02y-eYZSv2wJAmSNRwZAwyz3ETMiuU_PqX6c3RrFV8kc07RHWD7juFFAmtT9BDpGDWlAUm8KW9WGyqDbdDFSahvNb0i1nGkMVpSiiM3R44fwNlrX09d2mQUHDYPVNKdkw5AYqu3weusqWHdav2HXqCad86KoOjc4MAg0zXOgJsGpf6_qGrQbHqsaY03UQtQnW6QH8p4L4wUNJaVQ'); background-size: cover; background-position: center;">
+</div>
+<div class="flex flex-1 flex-col p-6">
+<div class="mb-3 flex items-center justify-between">
+<span class="text-xs font-semibold uppercase tracking-wider text-primary font-display">AI Workflows</span>
+<span class="text-xs text-slate-400 font-body">5 min read</span>
+</div>
+<h3 class="mb-3 font-display text-xl font-bold leading-tight text-slate-900 dark:text-white group-hover:text-primary transition-colors">
+                                Human-in-the-Loop AI Strategies
+                            </h3>
+<p class="mb-4 flex-1 font-body text-sm leading-relaxed text-slate-500 dark:text-slate-400">
+                                Full automation isn't always the answer. Learn how to integrate human oversight for better AI accuracy and trust.
+                            </p>
+<div class="flex items-center gap-2 pt-4 border-t border-slate-100 dark:border-slate-700">
+<div class="size-8 rounded-full bg-slate-200" data-alt="Portrait of Elena Rodriguez" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDthL1NI5JhdhEkvGifPrIxo5DuO5hiCjpMoVyZNk4qGWE2uOhgCB-gjEB_LiUkS5LfyDnjmbtZ7ud4Ge1ic9dGg6upq99ZqfUL6JWlXhGeVfU07SxfrPS8T9z1wbT0lAQgvdpTmdlrHXIdng7xfipb46HnHmyjSbv9jA3g9a3uyc2XGr0ovHHf1us0rNn7qGWHrxalGvsfwxfwH_cXC0iTdYXQ5Fhg9wFX3SzJufO_mUAvCqjLhb9FI9cl2mb7N7x4BtFgsGKIt2w'); background-size: cover;"></div>
+<div class="text-xs">
+<p class="font-bold text-slate-900 dark:text-white">Elena Rodriguez</p>
+<p class="text-slate-500">AI Ethicist</p>
+</div>
+</div>
+</div>
+</article>
+<!-- Article Card 6 -->
+<article class="group flex flex-col rounded-xl bg-white dark:bg-slate-800 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md ring-1 ring-slate-200 dark:ring-slate-700 overflow-hidden">
+<div class="aspect-[16/9] w-full bg-slate-100 overflow-hidden" data-alt="Laptop with business analytics dashboard" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD8FYHnyobhAjg2zGK7feMAbOweUjisKOSCOpK5AQ0jJrtStq7TvBtyPf3gJUCUrlXLsIh7kwHeIx4oOvHi7gUME4e5vjQFMpV7gLs4ua3XrPM52OG6mvTeXlCbMDAcjd-VKJYkFAag2CSLsHWpZyDe7SPM5cFZHk3QybY1cyeNoEVwKuI84I1TcZvXf-35yYXbpbXL0IAy93JeWYTgV9yBBRI1FZulLxO0fpqMvMu7l7JLa3aFSMyCJxIBGtL2AYdQliA3L9CmjXg'); background-size: cover; background-position: center;">
+</div>
+<div class="flex flex-1 flex-col p-6">
+<div class="mb-3 flex items-center justify-between">
+<span class="text-xs font-semibold uppercase tracking-wider text-primary font-display">SaaS Optimization</span>
+<span class="text-xs text-slate-400 font-body">8 min read</span>
+</div>
+<h3 class="mb-3 font-display text-xl font-bold leading-tight text-slate-900 dark:text-white group-hover:text-primary transition-colors">
+                                Reducing Churn with Predictive Analytics
+                            </h3>
+<p class="mb-4 flex-1 font-body text-sm leading-relaxed text-slate-500 dark:text-slate-400">
+                                Move from reactive to proactive retention strategies using your existing customer data points.
+                            </p>
+<div class="flex items-center gap-2 pt-4 border-t border-slate-100 dark:border-slate-700">
+<div class="size-8 rounded-full bg-slate-200" data-alt="Portrait of James Wilson" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBGXnidOXVdo2PGdg9RjEbhX8r_6tykLjLkK97EYdKAzpRmjvOWyTZvYn4VQOffNS0QsF4jQNLtFO642yiZ0b1kwSP99YOd7k0WIsXC4FxSQADzignwh_wi8Rn2HcxfwdmWHyD6c3BaziarvcEfVAXg8czMB0QnfsyEfdiJDXl5w7zTf55dmvFlbA2hMA-M_268aHJVJOY_VVyTZMp3CNZrh5RMWHuQIUwDz9yQiqvuvvHWsbinkL47zvF-Yf-EqbAJXDDEA4rrlvk'); background-size: cover;"></div>
+<div class="text-xs">
+<p class="font-bold text-slate-900 dark:text-white">James Wilson</p>
+<p class="text-slate-500">Head of Growth</p>
+</div>
+</div>
+</div>
+</article>
+</div>
+<div class="mt-12 flex justify-center">
+<button class="font-display flex h-10 items-center justify-center rounded-lg border border-slate-300 bg-white px-6 text-sm font-medium text-slate-700 shadow-sm hover:bg-slate-50 hover:text-primary transition-colors dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300 dark:hover:bg-slate-700">
+                        Load More Articles
+                    </button>
+</div>
+</div>
+</section>
+<!-- Lead Magnet Block -->
+<section class="py-16">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="relative overflow-hidden rounded-2xl bg-[#0d141b] px-6 py-12 shadow-2xl sm:px-12 sm:py-16 lg:flex lg:items-center lg:justify-between lg:px-20">
+<div class="absolute inset-0 z-0 opacity-20" data-alt="Abstract blue geometric pattern" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD_gSOT27DTxtcvDEr8gKZvHf_9UcSLwZgrC6yEB3J2-MtlRsKU0Ak-W4vj12SyxNfSu5MVFNREdj62IfcwBkpcL0ThfDtNMhmnpc4wMEhfS_HxuNI3MuPBAl1fLX6LrC4cDsSj-Jdyc_BSuqxrGOsOm4CYcgt8x-RncG4ywgS06qGohPIWSilza-d_R1jC_AjLmUjpKrci3hK2OSYe48OrdWiRcLJrG_5t4C3ImKS41-avIDLx3wrRrEeiHrV87bTdKrygeVA4moE'); background-size: cover;"></div>
+<div class="absolute inset-0 z-0 bg-gradient-to-r from-[#0d141b] via-[#0d141b]/90 to-transparent"></div>
+<div class="relative z-10 max-w-2xl">
+<span class="mb-3 block font-display text-sm font-bold uppercase tracking-wider text-primary">Free Resource</span>
+<h2 class="font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                            The State of AI in 2024: A Playbook
+                        </h2>
+<p class="mt-4 font-body text-lg text-slate-300">
+                            Implementing Generative AI safely requires a new set of rules. Download our comprehensive guide to navigating security, compliance, and deployment.
+                        </p>
+<div class="mt-8 flex flex-col sm:flex-row gap-3">
+<input class="rounded-lg border-0 bg-white/10 px-4 py-3 text-white placeholder-slate-400 backdrop-blur-sm ring-1 ring-inset ring-white/20 focus:ring-2 focus:ring-primary sm:w-80" placeholder="Enter your business email" type="email"/>
+<button class="font-display rounded-lg bg-primary px-6 py-3 text-sm font-bold text-white shadow-lg shadow-primary/30 hover:bg-primary/90 transition-colors">
+                                Download Playbook
+                            </button>
+</div>
+<p class="mt-3 text-xs text-slate-500">We care about your data in our <a class="underline hover:text-slate-300" href="#">privacy policy</a>.</p>
+</div>
+<div class="relative z-10 mt-10 hidden lg:block lg:mt-0">
+<div class="flex h-64 w-48 rotate-6 transform flex-col justify-center rounded-lg bg-white p-4 shadow-xl transition-transform hover:rotate-0">
+<div class="h-4 w-full rounded bg-slate-100"></div>
+<div class="mt-4 h-32 w-full rounded bg-slate-100" data-alt="Abstract chart icon" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAVXSgzD1O9zT75T7EZTKtsKOo9MqTLNOncE-IVHJOEEBMxGBrL_Almggzv3lLY_PDcILm8Vk38M2wLds_eDbjJ4-uuJE7KxPYmmOqZWsujTUOTq_al5a8Cpah2ZxrblkfAgs2ruarAUG9h_P1sosslXVBWHHOKH3GDG3GzzkCs7EzbvlMcRvkZhDeEWYRQg9iyoK3eRliKt-VtRwmGN9deGGacp79KFeSXE_5ZdZTQKP_KmU1uv_UozzzYgh4fYzTsFadMMwWvQfs'); background-size: cover;"></div>
+<div class="mt-4 space-y-2">
+<div class="h-2 w-3/4 rounded bg-slate-200"></div>
+<div class="h-2 w-1/2 rounded bg-slate-200"></div>
+<div class="h-2 w-full rounded bg-slate-200"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter CTA -->
+<section class="border-t border-slate-200 bg-white py-16 dark:border-slate-800 dark:bg-slate-900">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="mx-auto flex max-w-4xl flex-col items-center text-center">
+<div class="mb-6 flex size-14 items-center justify-center rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined text-3xl">mail</span>
+</div>
+<h2 class="font-display text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
+                        Stay ahead of the curve
+                    </h2>
+<p class="mx-auto mt-4 max-w-xl font-body text-lg text-slate-600 dark:text-slate-300">
+                        Get actionable AI insights, engineering frameworks, and SaaS optimization tips delivered to your inbox weekly. No fluff.
+                    </p>
+<form class="mt-8 flex w-full max-w-md flex-col gap-3 sm:flex-row">
+<label class="sr-only" for="email-address">Email address</label>
+<input autocomplete="email" class="min-w-0 flex-auto rounded-lg border-0 bg-slate-50 px-4 py-3 text-slate-900 ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-primary dark:bg-slate-800 dark:text-white dark:ring-slate-700 sm:text-sm sm:leading-6" id="email-address" name="email" placeholder="Enter your email" required="" type="email"/>
+<button class="font-display flex-none rounded-lg bg-slate-900 px-6 py-3 text-sm font-bold text-white shadow-sm hover:bg-slate-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-900 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-100 transition-colors" type="submit">
+                            Subscribe
+                        </button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-background-light dark:bg-background-dark py-12 border-t border-slate-200 dark:border-slate-800">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+<div>
+<div class="flex items-center gap-2 text-slate-900 dark:text-white mb-6">
+<div class="size-5 text-primary">
+<span class="material-symbols-outlined text-2xl">api</span>
+</div>
+<h2 class="font-display text-lg font-bold">Zyshaire</h2>
+</div>
+<p class="font-body text-sm text-slate-500 dark:text-slate-400">
+                        Helping modern enterprises measure and scale AI investments with precision.
+                    </p>
+<div class="mt-6 flex gap-4">
+<a class="text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="sr-only">Twitter</span>
+<svg aria-hidden="true" class="h-5 w-5" fill="currentColor" viewbox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg>
+</a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="sr-only">GitHub</span>
+<svg aria-hidden="true" class="h-5 w-5" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" fill-rule="evenodd"></path></svg>
+</a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="sr-only">LinkedIn</span>
+<svg aria-hidden="true" class="h-5 w-5" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" fill-rule="evenodd"></path></svg>
+</a>
+</div>
+</div>
+<div>
+<h3 class="font-display text-sm font-bold uppercase tracking-wider text-slate-900 dark:text-white">Product</h3>
+<ul class="mt-4 space-y-3">
+<li><a class="text-sm text-slate-500 hover:text-primary transition-colors dark:text-slate-400" href="#">Features</a></li>
+<li><a class="text-sm text-slate-500 hover:text-primary transition-colors dark:text-slate-400" href="#">Integrations</a></li>
+<li><a class="text-sm text-slate-500 hover:text-primary transition-colors dark:text-slate-400" href="#">Pricing</a></li>
+<li><a class="text-sm text-slate-500 hover:text-primary transition-colors dark:text-slate-400" href="#">Changelog</a></li>
+</ul>
+</div>
+<div>
+<h3 class="font-display text-sm font-bold uppercase tracking-wider text-slate-900 dark:text-white">Company</h3>
+<ul class="mt-4 space-y-3">
+<li><a class="text-sm text-slate-500 hover:text-primary transition-colors dark:text-slate-400" href="#">About Us</a></li>
+<li><a class="text-sm text-slate-500 hover:text-primary transition-colors dark:text-slate-400" href="#">Careers</a></li>
+<li><a class="text-sm text-slate-500 hover:text-primary transition-colors dark:text-slate-400" href="#">Blog</a></li>
+<li><a class="text-sm text-slate-500 hover:text-primary transition-colors dark:text-slate-400" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h3 class="font-display text-sm font-bold uppercase tracking-wider text-slate-900 dark:text-white">Legal</h3>
+<ul class="mt-4 space-y-3">
+<li><a class="text-sm text-slate-500 hover:text-primary transition-colors dark:text-slate-400" href="#">Privacy Policy</a></li>
+<li><a class="text-sm text-slate-500 hover:text-primary transition-colors dark:text-slate-400" href="#">Terms of Service</a></li>
+<li><a class="text-sm text-slate-500 hover:text-primary transition-colors dark:text-slate-400" href="#">Cookie Policy</a></li>
+</ul>
+</div>
+</div>
+<div class="mt-12 border-t border-slate-200 pt-8 dark:border-slate-800">
+<p class="font-body text-center text-xs text-slate-400">
+                    © 2024 Zyshaire Inc. All rights reserved.
+                </p>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Zyshaire Legal Center</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display antialiased overflow-x-hidden min-h-screen flex flex-col">
+<!-- Header -->
+<header class="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-sm">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="size-8 bg-primary rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-xl">gavel</span>
+</div>
+<span class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">Zyshaire Legal Center</span>
+</div>
+<a class="group flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-primary/30 dark:hover:border-primary/30 shadow-sm" href="#">
+<span class="material-symbols-outlined text-lg group-hover:-translate-x-0.5 transition-transform">arrow_back</span>
+                Back to Home
+            </a>
+</div>
+</header>
+<!-- Main Layout -->
+<div class="flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-8 lg:py-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Sticky Sidebar / Table of Contents -->
+<aside class="hidden lg:block lg:col-span-3">
+<div class="sticky top-24 space-y-8">
+<div>
+<h3 class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-4 px-2">On this page</h3>
+<nav class="space-y-1">
+<a class="block px-2 py-2 text-sm font-medium text-primary border-l-2 border-primary bg-primary/5 rounded-r-md" href="#intro">
+                                1. Introduction
+                            </a>
+<a class="block px-2 py-2 text-sm font-medium text-slate-600 dark:text-slate-400 border-l-2 border-transparent hover:text-slate-900 dark:hover:text-white hover:border-slate-300 dark:hover:border-slate-700 transition-all" href="#collection">
+                                2. Data Collection &amp; Usage
+                            </a>
+<a class="block px-2 py-2 text-sm font-medium text-slate-600 dark:text-slate-400 border-l-2 border-transparent hover:text-slate-900 dark:hover:text-white hover:border-slate-300 dark:hover:border-slate-700 transition-all" href="#ai-processing">
+                                3. AI Processing Disclaimer
+                            </a>
+<a class="block px-2 py-2 text-sm font-medium text-slate-600 dark:text-slate-400 border-l-2 border-transparent hover:text-slate-900 dark:hover:text-white hover:border-slate-300 dark:hover:border-slate-700 transition-all" href="#security">
+                                4. Security Measures
+                            </a>
+<a class="block px-2 py-2 text-sm font-medium text-slate-600 dark:text-slate-400 border-l-2 border-transparent hover:text-slate-900 dark:hover:text-white hover:border-slate-300 dark:hover:border-slate-700 transition-all" href="#rights">
+                                5. Your Rights
+                            </a>
+<a class="block px-2 py-2 text-sm font-medium text-slate-600 dark:text-slate-400 border-l-2 border-transparent hover:text-slate-900 dark:hover:text-white hover:border-slate-300 dark:hover:border-slate-700 transition-all" href="#contact">
+                                6. Contact Us
+                            </a>
+</nav>
+</div>
+<div class="p-4 bg-primary/5 dark:bg-primary/10 rounded-xl border border-primary/10">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1">contact_support</span>
+<div>
+<h4 class="text-sm font-bold text-slate-900 dark:text-white">Have questions?</h4>
+<p class="text-xs text-slate-600 dark:text-slate-400 mt-1 mb-3">Our legal team is here to help clarify any concerns.</p>
+<a class="text-xs font-bold text-primary hover:underline" href="mailto:legal@zyshaire.com">legal@zyshaire.com</a>
+</div>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="lg:col-span-9 max-w-3xl">
+<!-- Document Switcher -->
+<div class="mb-10">
+<nav aria-label="Tabs" class="flex p-1 space-x-1 bg-slate-200 dark:bg-slate-800 rounded-lg max-w-fit">
+<button class="px-4 py-2 text-sm font-bold text-white bg-primary rounded-md shadow-sm transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary dark:ring-offset-slate-900">
+                            Privacy Policy
+                        </button>
+<button class="px-4 py-2 text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-slate-800 dark:hover:text-white rounded-md transition-all focus:outline-none">
+                            Terms of Service
+                        </button>
+<button class="px-4 py-2 text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-slate-800 dark:hover:text-white rounded-md transition-all focus:outline-none">
+                            Cookie Policy
+                        </button>
+</nav>
+</div>
+<!-- Header Section -->
+<div class="mb-10 border-b border-slate-200 dark:border-slate-800 pb-8">
+<h1 class="text-4xl md:text-5xl font-bold tracking-tight text-slate-900 dark:text-white mb-4">Privacy Policy</h1>
+<div class="flex flex-wrap gap-4 items-center text-sm text-slate-500 dark:text-slate-400">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+<span>Effective Date: October 24, 2023</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">update</span>
+<span>Last Updated: October 24, 2023</span>
+</div>
+</div>
+<p class="mt-6 text-lg leading-relaxed text-slate-600 dark:text-slate-300">
+                        At Zyshaire, transparency and trust are core to our mission of delivering measurable outcomes through SaaS and AI. This Privacy Policy outlines how we collect, use, and protect your data when you use our platform.
+                    </p>
+</div>
+<!-- Legal Text Content -->
+<div class="prose prose-slate dark:prose-invert max-w-none text-slate-600 dark:text-slate-300">
+<section class="mb-12 scroll-mt-28" id="intro">
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-4 flex items-center gap-2">
+<span class="text-primary">1.</span> Introduction
+                        </h2>
+<p class="mb-4 leading-7">
+                            Welcome to Zyshaire ("we," "our," or "us"). We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about this privacy notice, or our practices with regards to your personal information, please contact us at <a class="text-primary underline decoration-primary/30 hover:decoration-primary" href="#">legal@zyshaire.com</a>.
+                        </p>
+<p class="leading-7">
+                            When you visit our website and use our services, you trust us with your personal information. We take your privacy very seriously. In this privacy notice, we describe our privacy policy. We seek to explain to you in the clearest way possible what information we collect, how we use it, and what rights you have in relation to it.
+                        </p>
+</section>
+<section class="mb-12 scroll-mt-28" id="collection">
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-4 flex items-center gap-2">
+<span class="text-primary">2.</span> Data Collection &amp; Usage
+                        </h2>
+<p class="mb-4 leading-7">
+                            We collect personal information that you voluntarily provide to us when you register on the Services, express an interest in obtaining information about us or our products and Services, when you participate in activities on the Services, or otherwise when you contact us.
+                        </p>
+<div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-lg p-6 mb-6">
+<h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">Types of Data We Collect</h3>
+<ul class="space-y-3">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-0.5">check_circle</span>
+<span><strong class="text-slate-900 dark:text-white">Personal Identity Information:</strong> Name, email address, phone number, job title.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-0.5">check_circle</span>
+<span><strong class="text-slate-900 dark:text-white">Technical Data:</strong> IP address, browser type and version, time zone setting, operating system.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-0.5">check_circle</span>
+<span><strong class="text-slate-900 dark:text-white">Usage Data:</strong> Information about how you use our website, products, and services.</span>
+</li>
+</ul>
+</div>
+</section>
+<section class="mb-12 scroll-mt-28" id="ai-processing">
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-4 flex items-center gap-2">
+<span class="text-primary">3.</span> AI Processing Disclaimer
+                        </h2>
+<p class="mb-4 leading-7">
+                            Zyshaire utilizes advanced Artificial Intelligence (AI) algorithms to process data for business insights. While we strive for accuracy, AI models may occasionally produce results that require human verification.
+                        </p>
+<p class="mb-4 leading-7">
+                            Data processed by our AI systems is anonymized where possible. We do not use your proprietary business logic or customer PII to train our public models without your explicit written consent.
+                        </p>
+<div class="flex items-center gap-4 p-4 bg-blue-50 dark:bg-blue-900/20 border-l-4 border-primary text-blue-800 dark:text-blue-100 rounded-r-lg">
+<span class="material-symbols-outlined shrink-0">info</span>
+<p class="text-sm font-medium">Your data integrity is paramount. Our AI models operate in isolated environments for enterprise clients.</p>
+</div>
+</section>
+<section class="mb-12 scroll-mt-28" id="security">
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-4 flex items-center gap-2">
+<span class="text-primary">4.</span> Security Measures
+                        </h2>
+<p class="mb-4 leading-7">
+                            We have implemented appropriate technical and organizational security measures designed to protect the security of any personal information we process. However, despite our safeguards and efforts to secure your information, no electronic transmission over the Internet or information storage technology can be guaranteed to be 100% secure.
+                        </p>
+<p class="leading-7">
+                            We use industry-standard encryption protocols (SSL/TLS) for data in transit and AES-256 encryption for data at rest. Access controls are strictly enforced based on the principle of least privilege.
+                        </p>
+</section>
+<section class="mb-12 scroll-mt-28" id="rights">
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-4 flex items-center gap-2">
+<span class="text-primary">5.</span> Your Rights
+                        </h2>
+<p class="mb-4 leading-7">
+                            Depending on your location, you may have certain rights regarding your personal information, such as the right to access, correct, delete, or transfer your data.
+                        </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="p-4 bg-white dark:bg-slate-900 rounded-lg border border-slate-200 dark:border-slate-800">
+<h4 class="font-bold text-slate-900 dark:text-white mb-2">Right to Access</h4>
+<p class="text-sm">You can request a copy of your personal data.</p>
+</div>
+<div class="p-4 bg-white dark:bg-slate-900 rounded-lg border border-slate-200 dark:border-slate-800">
+<h4 class="font-bold text-slate-900 dark:text-white mb-2">Right to Rectification</h4>
+<p class="text-sm">Request correction of inaccurate or incomplete data.</p>
+</div>
+<div class="p-4 bg-white dark:bg-slate-900 rounded-lg border border-slate-200 dark:border-slate-800">
+<h4 class="font-bold text-slate-900 dark:text-white mb-2">Right to Erasure</h4>
+<p class="text-sm">Request deletion of your data ("Right to be forgotten").</p>
+</div>
+<div class="p-4 bg-white dark:bg-slate-900 rounded-lg border border-slate-200 dark:border-slate-800">
+<h4 class="font-bold text-slate-900 dark:text-white mb-2">Right to Restrict</h4>
+<p class="text-sm">Limit how we use your data in certain circumstances.</p>
+</div>
+</div>
+</section>
+<section class="mb-8 scroll-mt-28" id="contact">
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-4 flex items-center gap-2">
+<span class="text-primary">6.</span> Contact Us
+                        </h2>
+<p class="mb-6 leading-7">
+                            If you have questions or comments about this policy, you may email us at <a class="text-primary font-bold hover:underline" href="mailto:legal@zyshaire.com">legal@zyshaire.com</a> or by post to:
+                        </p>
+<address class="not-italic bg-slate-100 dark:bg-slate-800 p-6 rounded-lg border border-slate-200 dark:border-slate-700">
+<strong class="text-slate-900 dark:text-white block mb-2 text-lg">Zyshaire Inc.</strong>
+                            123 Innovation Drive, Suite 400<br/>
+                            San Francisco, CA 94103<br/>
+                            United States
+                        </address>
+</section>
+</div>
+<!-- Bottom Download / Print -->
+<div class="mt-12 pt-8 border-t border-slate-200 dark:border-slate-800 flex justify-between items-center">
+<button class="flex items-center gap-2 text-sm font-bold text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors">
+<span class="material-symbols-outlined">print</span>
+                        Print Policy
+                    </button>
+<button class="flex items-center gap-2 text-sm font-bold text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors">
+<span class="material-symbols-outlined">download</span>
+                        Download PDF
+                    </button>
+</div>
+</main>
+</div>
+</div>
+<!-- Footer -->
+<footer class="mt-auto border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 py-12">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-2 text-slate-900 dark:text-white">
+<div class="size-6 bg-primary rounded flex items-center justify-center text-white text-xs">Z</div>
+<span class="font-bold">Zyshaire</span>
+</div>
+<div class="text-sm text-slate-500 dark:text-slate-400">
+                © 2023 Zyshaire Inc. All rights reserved.
+            </div>
+<div class="flex gap-6 text-sm">
+<a class="text-slate-500 hover:text-primary dark:text-slate-400 dark:hover:text-primary transition-colors" href="#">Privacy</a>
+<a class="text-slate-500 hover:text-primary dark:text-slate-400 dark:hover:text-primary transition-colors" href="#">Terms</a>
+<a class="text-slate-500 hover:text-primary dark:text-slate-400 dark:hover:text-primary transition-colors" href="#">Cookies</a>
+</div>
+</div>
+</footer>
+</body></html>

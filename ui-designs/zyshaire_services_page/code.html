@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Zyshaire - Services</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: "Space Grotesk", "Noto Sans", sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#0d141b] dark:text-white transition-colors duration-200">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Navigation -->
+<header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e7edf3] dark:border-gray-800 bg-slate-50/80 dark:bg-background-dark/80 backdrop-blur-md px-4 sm:px-10 py-3">
+<div class="flex items-center gap-4 text-[#0d141b] dark:text-white">
+<div class="size-6 text-primary">
+<span class="material-symbols-outlined">hexagon</span>
+</div>
+<h2 class="text-[#0d141b] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Zyshaire</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-[#0d141b] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Services</a>
+<a class="text-[#0d141b] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">About</a>
+<a class="text-[#0d141b] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Case Studies</a>
+<a class="text-[#0d141b] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary hover:bg-primary/90 transition-colors text-slate-50 text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Book Discovery Call</span>
+</button>
+</div>
+<button class="md:hidden text-gray-900 dark:text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<main class="flex-1">
+<!-- Hero Section -->
+<div class="px-4 py-12 md:px-20 lg:px-40 flex flex-1 justify-center bg-white dark:bg-background-dark border-b border-[#e7edf3] dark:border-gray-800">
+<div class="layout-content-container flex flex-col max-w-[1200px] flex-1">
+<div class="@container">
+<div class="flex flex-col gap-6 py-10 @[480px]:gap-8 @[864px]:flex-row items-center">
+<div class="flex flex-col gap-6 @[480px]:min-w-[400px] @[480px]:gap-8 flex-1">
+<div class="flex flex-col gap-4 text-left">
+<div class="inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 w-fit">
+<span class="material-symbols-outlined text-primary text-sm">auto_awesome</span>
+<span class="text-primary text-xs font-bold uppercase tracking-wider">Business Outcomes First</span>
+</div>
+<h1 class="text-[#0d141b] dark:text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl lg:text-6xl">
+                                        Services Built Around Business Outcomes
+                                    </h1>
+<p class="text-slate-600 dark:text-slate-300 text-lg font-normal leading-relaxed max-w-[600px]">
+                                        From custom SaaS development to AI workflow integration, we build systems that drive measurable growth and operational efficiency.
+                                    </p>
+</div>
+<div class="flex flex-wrap gap-3">
+<a class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-slate-50 text-base font-bold leading-normal tracking-[0.015em] hover:bg-blue-600 transition-colors" href="#engagement-models">
+<span class="truncate">View Engagement Models</span>
+</a>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-[#e7edf3] dark:bg-slate-700 text-[#0d141b] dark:text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors">
+<span class="truncate">Book Discovery Call</span>
+</button>
+</div>
+</div>
+<div class="w-full h-full min-h-[300px] flex-1 rounded-2xl overflow-hidden shadow-xl dark:shadow-blue-900/10 relative group">
+<div class="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent z-10"></div>
+<img alt="Data analytics dashboard on a laptop screen with graphs" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Modern dashboard showing analytics and growth charts" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLfgYW6Ku9UUNg4y5bOBRLQV8rAplJjg5X_9s5OBGg0SXEbI5Wnbqvez0nY8N5YZDaM0EB9IRswNSo2N5jB2ILvCco7LTgm5woGjb8J33yW3Xw1vK57c4_pD11D0tgyw4arKFeta2MPumQyb8XngVSyllNtcfBVgSgayWuaCsiOKyXosJcQtyTJXjD_QhjWFEUtbe8iZRBp2XdJBWc5_nA5zBVeEQNaoRhChSI4lmsyKTTJl2pxAlytv6qplgCMiAzt_FPtmnRmlM"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Services Section Container -->
+<div class="px-4 md:px-20 lg:px-40 py-16 flex justify-center">
+<div class="max-w-[1200px] w-full flex flex-col gap-24">
+<!-- Service Block 1: Web & App Development -->
+<div class="flex flex-col gap-10 @container">
+<div class="flex flex-col lg:flex-row gap-10 lg:gap-20">
+<div class="flex flex-col gap-4 flex-1">
+<span class="text-primary font-bold tracking-widest uppercase text-sm">Core Infrastructure</span>
+<h2 class="text-[#0d141b] dark:text-white text-3xl font-bold leading-tight md:text-4xl">
+                                    Web &amp; App Development
+                                </h2>
+<p class="text-slate-600 dark:text-slate-300 text-lg leading-relaxed">
+                                    We build scalable, secure, and high-performance applications tailored to your business needs, ensuring your digital foundation is robust enough for growth.
+                                </p>
+</div>
+<div class="flex-[1.5] grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Problems Card -->
+<div class="flex flex-col gap-4 rounded-xl border border-[#cfdbe7] dark:border-slate-700 bg-white dark:bg-slate-800 p-6 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center gap-3 text-[#0d141b] dark:text-white mb-2">
+<div class="p-2 bg-red-50 dark:bg-red-900/20 rounded-lg text-red-500">
+<span class="material-symbols-outlined">warning</span>
+</div>
+<h3 class="text-lg font-bold">Problems Solved</h3>
+</div>
+<ul class="flex flex-col gap-3">
+<li class="flex gap-3 text-slate-600 dark:text-slate-300 text-sm">
+<span class="material-symbols-outlined text-red-400 text-[20px]">remove</span>
+                                            Legacy system bottlenecks slowing down operations
+                                        </li>
+<li class="flex gap-3 text-slate-600 dark:text-slate-300 text-sm">
+<span class="material-symbols-outlined text-red-400 text-[20px]">remove</span>
+                                            Poor user experience reducing customer retention
+                                        </li>
+<li class="flex gap-3 text-slate-600 dark:text-slate-300 text-sm">
+<span class="material-symbols-outlined text-red-400 text-[20px]">remove</span>
+                                            Unscalable architecture limiting market expansion
+                                        </li>
+</ul>
+</div>
+<!-- Deliverables Card -->
+<div class="flex flex-col gap-4 rounded-xl border border-[#cfdbe7] dark:border-slate-700 bg-white dark:bg-slate-800 p-6 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center gap-3 text-[#0d141b] dark:text-white mb-2">
+<div class="p-2 bg-green-50 dark:bg-green-900/20 rounded-lg text-green-600">
+<span class="material-symbols-outlined">check_circle</span>
+</div>
+<h3 class="text-lg font-bold">Deliverables</h3>
+</div>
+<ul class="flex flex-col gap-3">
+<li class="flex gap-3 text-slate-600 dark:text-slate-300 text-sm">
+<span class="material-symbols-outlined text-green-500 text-[20px]">check</span>
+                                            Custom high-performance web applications
+                                        </li>
+<li class="flex gap-3 text-slate-600 dark:text-slate-300 text-sm">
+<span class="material-symbols-outlined text-green-500 text-[20px]">check</span>
+                                            Native &amp; Cross-platform mobile apps
+                                        </li>
+<li class="flex gap-3 text-slate-600 dark:text-slate-300 text-sm">
+<span class="material-symbols-outlined text-green-500 text-[20px]">check</span>
+                                            Secure API integration &amp; development
+                                        </li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="h-px w-full bg-slate-200 dark:bg-slate-800"></div>
+<!-- Service Block 2: Enterprise Solutions -->
+<div class="flex flex-col gap-10 @container">
+<div class="flex flex-col lg:flex-row gap-10 lg:gap-20">
+<div class="flex flex-col gap-4 flex-1">
+<span class="text-primary font-bold tracking-widest uppercase text-sm">Scale &amp; Security</span>
+<h2 class="text-[#0d141b] dark:text-white text-3xl font-bold leading-tight md:text-4xl">
+                                    Enterprise Solutions
+                                </h2>
+<p class="text-slate-600 dark:text-slate-300 text-lg leading-relaxed">
+                                    We re-engineer complex business processes into streamlined digital workflows, ensuring compliance and efficiency at scale.
+                                </p>
+</div>
+<div class="flex-[1.5] grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Problems Card -->
+<div class="flex flex-col gap-4 rounded-xl border border-[#cfdbe7] dark:border-slate-700 bg-white dark:bg-slate-800 p-6 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center gap-3 text-[#0d141b] dark:text-white mb-2">
+<div class="p-2 bg-red-50 dark:bg-red-900/20 rounded-lg text-red-500">
+<span class="material-symbols-outlined">warning</span>
+</div>
+<h3 class="text-lg font-bold">Problems Solved</h3>
+</div>
+<ul class="flex flex-col gap-3">
+<li class="flex gap-3 text-slate-600 dark:text-slate-300 text-sm">
+<span class="material-symbols-outlined text-red-400 text-[20px]">remove</span>
+                                            Fragmented data across multiple departments
+                                        </li>
+<li class="flex gap-3 text-slate-600 dark:text-slate-300 text-sm">
+<span class="material-symbols-outlined text-red-400 text-[20px]">remove</span>
+                                            Compliance risks and security vulnerabilities
+                                        </li>
+<li class="flex gap-3 text-slate-600 dark:text-slate-300 text-sm">
+<span class="material-symbols-outlined text-red-400 text-[20px]">remove</span>
+                                            Inefficient manual resource planning
+                                        </li>
+</ul>
+</div>
+<!-- Deliverables Card -->
+<div class="flex flex-col gap-4 rounded-xl border border-[#cfdbe7] dark:border-slate-700 bg-white dark:bg-slate-800 p-6 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center gap-3 text-[#0d141b] dark:text-white mb-2">
+<div class="p-2 bg-green-50 dark:bg-green-900/20 rounded-lg text-green-600">
+<span class="material-symbols-outlined">check_circle</span>
+</div>
+<h3 class="text-lg font-bold">Deliverables</h3>
+</div>
+<ul class="flex flex-col gap-3">
+<li class="flex gap-3 text-slate-600 dark:text-slate-300 text-sm">
+<span class="material-symbols-outlined text-green-500 text-[20px]">check</span>
+                                            Custom ERP &amp; CRM development
+                                        </li>
+<li class="flex gap-3 text-slate-600 dark:text-slate-300 text-sm">
+<span class="material-symbols-outlined text-green-500 text-[20px]">check</span>
+                                            Data warehousing &amp; migration strategies
+                                        </li>
+<li class="flex gap-3 text-slate-600 dark:text-slate-300 text-sm">
+<span class="material-symbols-outlined text-green-500 text-[20px]">check</span>
+                                            Role-based access control systems
+                                        </li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="h-px w-full bg-slate-200 dark:bg-slate-800"></div>
+<!-- Service Block 3: AI Workflow Integration -->
+<div class="flex flex-col gap-10 @container">
+<div class="flex flex-col lg:flex-row gap-10 lg:gap-20">
+<div class="flex flex-col gap-4 flex-1">
+<span class="text-primary font-bold tracking-widest uppercase text-sm">Automation</span>
+<h2 class="text-[#0d141b] dark:text-white text-3xl font-bold leading-tight md:text-4xl">
+                                    AI Workflow Integration
+                                </h2>
+<p class="text-slate-600 dark:text-slate-300 text-lg leading-relaxed">
+                                    Leverage Large Language Models and automation agents to handle repetitive cognitive tasks, freeing your team for strategic work.
+                                </p>
+</div>
+<div class="flex-[1.5] grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Problems Card -->
+<div class="flex flex-col gap-4 rounded-xl border border-[#cfdbe7] dark:border-slate-700 bg-white dark:bg-slate-800 p-6 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center gap-3 text-[#0d141b] dark:text-white mb-2">
+<div class="p-2 bg-red-50 dark:bg-red-900/20 rounded-lg text-red-500">
+<span class="material-symbols-outlined">warning</span>
+</div>
+<h3 class="text-lg font-bold">Problems Solved</h3>
+</div>
+<ul class="flex flex-col gap-3">
+<li class="flex gap-3 text-slate-600 dark:text-slate-300 text-sm">
+<span class="material-symbols-outlined text-red-400 text-[20px]">remove</span>
+                                            High operational costs from manual data entry
+                                        </li>
+<li class="flex gap-3 text-slate-600 dark:text-slate-300 text-sm">
+<span class="material-symbols-outlined text-red-400 text-[20px]">remove</span>
+                                            Slow response times in customer support
+                                        </li>
+<li class="flex gap-3 text-slate-600 dark:text-slate-300 text-sm">
+<span class="material-symbols-outlined text-red-400 text-[20px]">remove</span>
+                                            Inconsistent output quality in routine tasks
+                                        </li>
+</ul>
+</div>
+<!-- Deliverables Card -->
+<div class="flex flex-col gap-4 rounded-xl border border-[#cfdbe7] dark:border-slate-700 bg-white dark:bg-slate-800 p-6 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center gap-3 text-[#0d141b] dark:text-white mb-2">
+<div class="p-2 bg-green-50 dark:bg-green-900/20 rounded-lg text-green-600">
+<span class="material-symbols-outlined">check_circle</span>
+</div>
+<h3 class="text-lg font-bold">Deliverables</h3>
+</div>
+<ul class="flex flex-col gap-3">
+<li class="flex gap-3 text-slate-600 dark:text-slate-300 text-sm">
+<span class="material-symbols-outlined text-green-500 text-[20px]">check</span>
+                                            Custom LLM-powered chatbots &amp; agents
+                                        </li>
+<li class="flex gap-3 text-slate-600 dark:text-slate-300 text-sm">
+<span class="material-symbols-outlined text-green-500 text-[20px]">check</span>
+                                            Automated document processing pipelines
+                                        </li>
+<li class="flex gap-3 text-slate-600 dark:text-slate-300 text-sm">
+<span class="material-symbols-outlined text-green-500 text-[20px]">check</span>
+                                            Intelligent API connectivity (Zapier/Make)
+                                        </li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="h-px w-full bg-slate-200 dark:bg-slate-800"></div>
+<!-- Service Block 4: AI Audit & Strategy -->
+<div class="flex flex-col gap-10 @container">
+<div class="flex flex-col lg:flex-row gap-10 lg:gap-20">
+<div class="flex flex-col gap-4 flex-1">
+<span class="text-primary font-bold tracking-widest uppercase text-sm">Intelligence</span>
+<h2 class="text-[#0d141b] dark:text-white text-3xl font-bold leading-tight md:text-4xl">
+                                    AI Audit &amp; Strategy
+                                </h2>
+<p class="text-slate-600 dark:text-slate-300 text-lg leading-relaxed">
+                                    Not sure where to start? We analyze your current infrastructure to identify high-impact opportunities for AI implementation.
+                                </p>
+</div>
+<div class="flex-[1.5] grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Problems Card -->
+<div class="flex flex-col gap-4 rounded-xl border border-[#cfdbe7] dark:border-slate-700 bg-white dark:bg-slate-800 p-6 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center gap-3 text-[#0d141b] dark:text-white mb-2">
+<div class="p-2 bg-red-50 dark:bg-red-900/20 rounded-lg text-red-500">
+<span class="material-symbols-outlined">warning</span>
+</div>
+<h3 class="text-lg font-bold">Problems Solved</h3>
+</div>
+<ul class="flex flex-col gap-3">
+<li class="flex gap-3 text-slate-600 dark:text-slate-300 text-sm">
+<span class="material-symbols-outlined text-red-400 text-[20px]">remove</span>
+                                            Uncertainty about AI ROI and implementation
+                                        </li>
+<li class="flex gap-3 text-slate-600 dark:text-slate-300 text-sm">
+<span class="material-symbols-outlined text-red-400 text-[20px]">remove</span>
+                                            Lack of internal technical expertise
+                                        </li>
+<li class="flex gap-3 text-slate-600 dark:text-slate-300 text-sm">
+<span class="material-symbols-outlined text-red-400 text-[20px]">remove</span>
+                                            Wasted budget on wrong tools
+                                        </li>
+</ul>
+</div>
+<!-- Deliverables Card -->
+<div class="flex flex-col gap-4 rounded-xl border border-[#cfdbe7] dark:border-slate-700 bg-white dark:bg-slate-800 p-6 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center gap-3 text-[#0d141b] dark:text-white mb-2">
+<div class="p-2 bg-green-50 dark:bg-green-900/20 rounded-lg text-green-600">
+<span class="material-symbols-outlined">check_circle</span>
+</div>
+<h3 class="text-lg font-bold">Deliverables</h3>
+</div>
+<ul class="flex flex-col gap-3">
+<li class="flex gap-3 text-slate-600 dark:text-slate-300 text-sm">
+<span class="material-symbols-outlined text-green-500 text-[20px]">check</span>
+                                            Comprehensive AI Opportunity Roadmap
+                                        </li>
+<li class="flex gap-3 text-slate-600 dark:text-slate-300 text-sm">
+<span class="material-symbols-outlined text-green-500 text-[20px]">check</span>
+                                            Tech Stack Assessment &amp; Recommendations
+                                        </li>
+<li class="flex gap-3 text-slate-600 dark:text-slate-300 text-sm">
+<span class="material-symbols-outlined text-green-500 text-[20px]">check</span>
+                                            Proof-of-Concept Prototypes
+                                        </li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Engagement Models -->
+<div class="w-full bg-slate-50 dark:bg-[#15202b] py-20 px-4 md:px-20 lg:px-40" id="engagement-models">
+<div class="max-w-[1200px] mx-auto flex flex-col gap-12">
+<div class="text-center max-w-2xl mx-auto">
+<span class="text-primary font-bold tracking-widest uppercase text-sm mb-2 block">Collaboration</span>
+<h2 class="text-[#0d141b] dark:text-white text-3xl font-bold md:text-4xl mb-4">Flexible Engagement Models</h2>
+<p class="text-slate-600 dark:text-slate-300 text-lg">We adapt to your business needs, whether you need a specific deliverable or a long-term technology partner.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Model 1 -->
+<div class="flex flex-col rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 p-8 hover:border-primary/50 transition-colors shadow-lg dark:shadow-none">
+<div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-3xl">rocket_launch</span>
+</div>
+<h3 class="text-xl font-bold text-[#0d141b] dark:text-white mb-2">Project-Based</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm mb-6 flex-1">Best for defined scopes with clear deliverables. We build, test, and hand over.</p>
+<ul class="space-y-3 mb-8">
+<li class="flex items-center gap-2 text-sm text-[#0d141b] dark:text-white font-medium">
+<span class="material-symbols-outlined text-primary text-lg">check</span> Fixed timeline &amp; budget
+                                </li>
+<li class="flex items-center gap-2 text-sm text-[#0d141b] dark:text-white font-medium">
+<span class="material-symbols-outlined text-primary text-lg">check</span> Clear deliverables
+                                </li>
+<li class="flex items-center gap-2 text-sm text-[#0d141b] dark:text-white font-medium">
+<span class="material-symbols-outlined text-primary text-lg">check</span> One-off engagement
+                                </li>
+</ul>
+<button class="w-full py-3 rounded-lg border border-slate-300 dark:border-slate-600 font-bold text-sm text-[#0d141b] dark:text-white hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors">Start a Project</button>
+</div>
+<!-- Model 2 -->
+<div class="flex flex-col rounded-2xl bg-[#101922] dark:bg-background-dark border border-primary p-8 relative shadow-xl transform md:-translate-y-4">
+<div class="absolute top-0 right-0 bg-primary text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">POPULAR</div>
+<div class="size-12 rounded-lg bg-primary flex items-center justify-center text-white mb-6">
+<span class="material-symbols-outlined text-3xl">all_inclusive</span>
+</div>
+<h3 class="text-xl font-bold text-white mb-2">Retainer</h3>
+<p class="text-slate-300 text-sm mb-6 flex-1">For ongoing development, maintenance, and continuous improvement.</p>
+<ul class="space-y-3 mb-8">
+<li class="flex items-center gap-2 text-sm text-white font-medium">
+<span class="material-symbols-outlined text-primary text-lg">check</span> Dedicated hours/month
+                                </li>
+<li class="flex items-center gap-2 text-sm text-white font-medium">
+<span class="material-symbols-outlined text-primary text-lg">check</span> Priority support
+                                </li>
+<li class="flex items-center gap-2 text-sm text-white font-medium">
+<span class="material-symbols-outlined text-primary text-lg">check</span> Flexible task allocation
+                                </li>
+</ul>
+<button class="w-full py-3 rounded-lg bg-primary font-bold text-sm text-white hover:bg-blue-600 transition-colors shadow-lg shadow-blue-500/30">Get Monthly Support</button>
+</div>
+<!-- Model 3 -->
+<div class="flex flex-col rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 p-8 hover:border-primary/50 transition-colors shadow-lg dark:shadow-none">
+<div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-3xl">group_add</span>
+</div>
+<h3 class="text-xl font-bold text-[#0d141b] dark:text-white mb-2">Fractional</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm mb-6 flex-1">Embed senior technical leadership into your team without the full-time cost.</p>
+<ul class="space-y-3 mb-8">
+<li class="flex items-center gap-2 text-sm text-[#0d141b] dark:text-white font-medium">
+<span class="material-symbols-outlined text-primary text-lg">check</span> CTO/VP level guidance
+                                </li>
+<li class="flex items-center gap-2 text-sm text-[#0d141b] dark:text-white font-medium">
+<span class="material-symbols-outlined text-primary text-lg">check</span> Team mentorship
+                                </li>
+<li class="flex items-center gap-2 text-sm text-[#0d141b] dark:text-white font-medium">
+<span class="material-symbols-outlined text-primary text-lg">check</span> Strategic roadmap
+                                </li>
+</ul>
+<button class="w-full py-3 rounded-lg border border-slate-300 dark:border-slate-600 font-bold text-sm text-[#0d141b] dark:text-white hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors">Hire Leadership</button>
+</div>
+</div>
+</div>
+</div>
+<!-- FAQ Section -->
+<div class="px-4 py-20 md:px-20 lg:px-40 flex justify-center bg-white dark:bg-background-dark">
+<div class="max-w-[800px] w-full flex flex-col gap-10">
+<div class="text-center">
+<h2 class="text-[#0d141b] dark:text-white text-3xl font-bold mb-4">Common Questions</h2>
+</div>
+<div class="flex flex-col gap-4">
+<!-- Question 1 -->
+<details class="group rounded-xl bg-slate-50 dark:bg-slate-800 p-4 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex cursor-pointer items-center justify-between gap-1.5 text-[#0d141b] dark:text-white">
+<h3 class="text-lg font-bold">How quickly can we start a project?</h3>
+<span class="material-symbols-outlined transition duration-300 group-open:-rotate-180">expand_more</span>
+</summary>
+<p class="mt-4 leading-relaxed text-slate-600 dark:text-slate-300">
+                                Typically, we can kick off within 1-2 weeks after the discovery call and proposal approval. We start with a rapid onboarding phase to align on goals and access requirements.
+                            </p>
+</details>
+<!-- Question 2 -->
+<details class="group rounded-xl bg-slate-50 dark:bg-slate-800 p-4 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex cursor-pointer items-center justify-between gap-1.5 text-[#0d141b] dark:text-white">
+<h3 class="text-lg font-bold">Do you work with non-technical founders?</h3>
+<span class="material-symbols-outlined transition duration-300 group-open:-rotate-180">expand_more</span>
+</summary>
+<p class="mt-4 leading-relaxed text-slate-600 dark:text-slate-300">
+                                Absolutely. We specialize in translating business outcomes into technical requirements. We act as your technical partner, explaining decisions in plain English, not jargon.
+                            </p>
+</details>
+<!-- Question 3 -->
+<details class="group rounded-xl bg-slate-50 dark:bg-slate-800 p-4 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex cursor-pointer items-center justify-between gap-1.5 text-[#0d141b] dark:text-white">
+<h3 class="text-lg font-bold">What is your tech stack?</h3>
+<span class="material-symbols-outlined transition duration-300 group-open:-rotate-180">expand_more</span>
+</summary>
+<p class="mt-4 leading-relaxed text-slate-600 dark:text-slate-300">
+                                We are pragmatic. For web, we often use React/Next.js and Node.js or Python. For AI, we leverage OpenAI, Anthropic, and open-source models via LangChain. We choose the best tool for the job, not just the newest trend.
+                            </p>
+</details>
+<!-- Question 4 -->
+<details class="group rounded-xl bg-slate-50 dark:bg-slate-800 p-4 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex cursor-pointer items-center justify-between gap-1.5 text-[#0d141b] dark:text-white">
+<h3 class="text-lg font-bold">How do you handle IP rights?</h3>
+<span class="material-symbols-outlined transition duration-300 group-open:-rotate-180">expand_more</span>
+</summary>
+<p class="mt-4 leading-relaxed text-slate-600 dark:text-slate-300">
+                                You own the code. Upon final payment, all intellectual property rights for custom development are transferred to your company.
+                            </p>
+</details>
+</div>
+</div>
+</div>
+<!-- CTA Section -->
+<div class="px-4 py-20 bg-background-light dark:bg-background-dark flex justify-center">
+<div class="w-full max-w-[1200px] bg-[#101922] rounded-3xl overflow-hidden relative isolate">
+<!-- Background Pattern -->
+<div class="absolute inset-0 -z-10 opacity-20" style="background-image: radial-gradient(#137fec 1px, transparent 1px); background-size: 24px 24px;"></div>
+<div class="absolute right-0 top-0 -z-10 h-full w-1/2 bg-gradient-to-l from-primary/20 to-transparent blur-3xl"></div>
+<div class="flex flex-col md:flex-row items-center justify-between p-10 md:p-16 gap-10">
+<div class="flex flex-col gap-4 max-w-xl">
+<h2 class="text-white text-3xl md:text-4xl font-bold leading-tight">Ready to optimize your business systems?</h2>
+<p class="text-slate-300 text-lg">Schedule a free 30-minute discovery call to discuss your bottlenecks and how we can solve them.</p>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 shrink-0">
+<button class="flex min-w-[160px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-8 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-blue-600 transition-colors shadow-lg shadow-blue-500/30">
+                                Book Discovery Call
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 pt-16 pb-8 px-4 md:px-20 lg:px-40">
+<div class="max-w-[1200px] mx-auto flex flex-col gap-10">
+<div class="flex flex-col md:flex-row justify-between gap-10">
+<div class="flex flex-col gap-4 max-w-xs">
+<div class="flex items-center gap-2 text-[#0d141b] dark:text-white">
+<div class="size-6 text-primary">
+<span class="material-symbols-outlined">hexagon</span>
+</div>
+<h2 class="text-xl font-bold">Zyshaire</h2>
+</div>
+<p class="text-slate-500 text-sm">Building the future of business with SaaS and AI solutions that matter.</p>
+</div>
+<div class="flex flex-wrap gap-10 md:gap-20">
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-[#0d141b] dark:text-white">Services</h4>
+<a class="text-slate-500 hover:text-primary text-sm" href="#">Web Development</a>
+<a class="text-slate-500 hover:text-primary text-sm" href="#">AI Integration</a>
+<a class="text-slate-500 hover:text-primary text-sm" href="#">Enterprise Solutions</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-[#0d141b] dark:text-white">Company</h4>
+<a class="text-slate-500 hover:text-primary text-sm" href="#">About Us</a>
+<a class="text-slate-500 hover:text-primary text-sm" href="#">Case Studies</a>
+<a class="text-slate-500 hover:text-primary text-sm" href="#">Careers</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-[#0d141b] dark:text-white">Connect</h4>
+<a class="text-slate-500 hover:text-primary text-sm" href="#">LinkedIn</a>
+<a class="text-slate-500 hover:text-primary text-sm" href="#">Twitter</a>
+<a class="text-slate-500 hover:text-primary text-sm" href="#">Contact</a>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-400">
+<p>© 2024 Zyshaire Inc. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="hover:text-slate-600 dark:hover:text-slate-200" href="#">Privacy Policy</a>
+<a class="hover:text-slate-600 dark:hover:text-slate-200" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

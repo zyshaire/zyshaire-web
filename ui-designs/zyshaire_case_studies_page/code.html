@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Zyshaire - Case Studies</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: "Noto Sans", sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6, .font-display {
+            font-family: "Space Grotesk", sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#0d141b] dark:text-slate-50 min-h-screen flex flex-col overflow-x-hidden">
+<!-- Top Navbar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e7edf3] dark:border-b-slate-800 px-10 py-3 bg-white dark:bg-[#1a2632] sticky top-0 z-50">
+<div class="flex items-center gap-4">
+<div class="size-8 text-primary">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 6H42L36 24L42 42H6L12 24L6 6Z"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em] font-display">Zyshaire</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8 hidden md:flex">
+<div class="flex items-center gap-9">
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Solutions</a>
+<a class="text-sm font-medium leading-normal text-primary" href="#">Case Studies</a>
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">About Us</a>
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-slate-50 text-sm font-bold leading-normal tracking-[0.015em] hover:bg-blue-600 transition-colors">
+<span class="truncate">Get Started</span>
+</button>
+</div>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative bg-[#101922] py-20 px-4 md:px-10 overflow-hidden">
+<!-- Background Abstract Pattern -->
+<div class="absolute inset-0 opacity-20 pointer-events-none" style="background-image: radial-gradient(#137fec 1px, transparent 1px); background-size: 30px 30px;"></div>
+<div class="absolute right-0 top-0 h-full w-1/3 bg-gradient-to-l from-primary/20 to-transparent pointer-events-none"></div>
+<div class="max-w-7xl mx-auto relative z-10 flex flex-col items-center text-center">
+<span class="px-3 py-1 rounded-full bg-primary/20 text-primary text-xs font-bold uppercase tracking-wider mb-6 border border-primary/30">Proven Results</span>
+<h1 class="text-white text-4xl md:text-6xl font-black leading-tight tracking-tight mb-6 max-w-4xl">
+                    Engineering Measurable Growth with <span class="text-primary">AI &amp; SaaS</span>
+</h1>
+<p class="text-slate-300 text-lg md:text-xl font-normal leading-relaxed max-w-2xl mb-10">
+                    Explore how Zyshaire transforms business complexity into streamlined success stories with measurable outcomes.
+                </p>
+<div class="flex flex-wrap justify-center gap-4">
+<div class="flex flex-col items-center px-6 py-2 border-r border-slate-700 last:border-0">
+<span class="text-3xl font-bold text-white font-display">150+</span>
+<span class="text-sm text-slate-400">Projects Delivered</span>
+</div>
+<div class="flex flex-col items-center px-6 py-2 border-r border-slate-700 last:border-0">
+<span class="text-3xl font-bold text-white font-display">98%</span>
+<span class="text-sm text-slate-400">Client Retention</span>
+</div>
+<div class="flex flex-col items-center px-6 py-2 border-r border-slate-700 last:border-0">
+<span class="text-3xl font-bold text-white font-display">300%</span>
+<span class="text-sm text-slate-400">Avg ROI</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Filter Bar -->
+<div class="sticky top-[64px] z-40 bg-white/90 dark:bg-[#1a2632]/95 backdrop-blur-sm border-b border-[#e7edf3] dark:border-slate-800 shadow-sm">
+<div class="max-w-7xl mx-auto px-4 md:px-10 py-4">
+<div class="flex flex-wrap items-center justify-between gap-4">
+<div class="flex flex-wrap items-center gap-2">
+<span class="text-sm font-semibold text-slate-500 mr-2 uppercase tracking-wide">Filter By:</span>
+<!-- Filter: Industry -->
+<div class="relative group">
+<button class="flex items-center gap-2 px-4 py-2 rounded-lg border border-[#cfdbe7] dark:border-slate-700 bg-white dark:bg-slate-800 text-sm font-medium hover:border-primary transition-colors">
+<span class="material-symbols-outlined text-lg">domain</span>
+<span>Industry</span>
+<span class="material-symbols-outlined text-lg">expand_more</span>
+</button>
+</div>
+<!-- Filter: Service -->
+<div class="relative group">
+<button class="flex items-center gap-2 px-4 py-2 rounded-lg border border-[#cfdbe7] dark:border-slate-700 bg-white dark:bg-slate-800 text-sm font-medium hover:border-primary transition-colors">
+<span class="material-symbols-outlined text-lg">memory</span>
+<span>Service</span>
+<span class="material-symbols-outlined text-lg">expand_more</span>
+</button>
+</div>
+<!-- Active Filter Tag Example -->
+<button class="flex items-center gap-2 px-3 py-2 rounded-lg bg-primary/10 text-primary border border-primary/20 text-sm font-medium hover:bg-primary/20 transition-colors">
+<span>SaaS Development</span>
+<span class="material-symbols-outlined text-sm">close</span>
+</button>
+</div>
+<div class="flex items-center">
+<button class="text-sm text-slate-500 hover:text-primary underline decoration-dotted underline-offset-4">Reset Filters</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Case Studies Grid -->
+<section class="py-12 px-4 md:px-10 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<article class="group flex flex-col bg-white dark:bg-[#1e2936] rounded-xl border border-[#e7edf3] dark:border-slate-700 overflow-hidden hover:shadow-xl hover:border-primary/50 transition-all duration-300 transform hover:-translate-y-1">
+<div class="h-48 w-full bg-slate-200 relative overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Data visualization dashboard screen" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDKqWg9NQLCxGtl45AYF0CJdb6la-QZrQCdluR3AjEBzNyNETlQ0bo0p_EyiihgRTsqqm73Y0ORc2f-UAY-p2dyI8gvAEbcLOAN3lwd7hkr5KdAVDk6ULx7WVU51XTH1mM3F6GXSPY8lRief7xiqTDZhUOKlhleOq4mPuLf9yezQuOGg2sT5P-YWjHyBIyN_52n1Qg8xKWnQr49FQFkSVImICddm7kWkRjKfbEdMtRg76YhhD0fhJ6kVG7LwzIXwQgqDroq7lHKSes");'></div>
+<div class="absolute top-4 left-4 bg-white dark:bg-slate-800 px-3 py-1 rounded-full text-xs font-bold shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-primary">local_shipping</span>
+                            Logistics
+                         </div>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<div class="flex items-center gap-3 mb-4">
+<div class="size-8 rounded bg-slate-100 dark:bg-slate-700 flex items-center justify-center font-bold text-primary">L</div>
+<div>
+<h3 class="font-bold text-lg leading-tight">LogiStream AI Routing</h3>
+<p class="text-xs text-slate-500 dark:text-slate-400">SaaS Platform • AI Integration</p>
+</div>
+</div>
+<div class="space-y-4 mb-6 flex-1">
+<div>
+<h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">The Challenge</h4>
+<p class="text-sm text-slate-600 dark:text-slate-300">Legacy tracking systems were causing 2-day delays in cross-border shipments and opaque data silos.</p>
+</div>
+<div>
+<h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">The Solution</h4>
+<p class="text-sm text-slate-600 dark:text-slate-300">Implemented a custom predictive AI model to optimize routing in real-time based on traffic and weather.</p>
+</div>
+</div>
+<div class="pt-4 border-t border-slate-100 dark:border-slate-700">
+<h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Key Results</h4>
+<div class="flex justify-between items-end">
+<div>
+<span class="block text-3xl font-bold text-primary font-display">45%</span>
+<span class="text-xs font-medium text-slate-500 dark:text-slate-400">Faster Delivery</span>
+</div>
+<div class="text-right">
+<span class="block text-xl font-bold text-[#0d141b] dark:text-white font-display">$2M</span>
+<span class="text-xs font-medium text-slate-500 dark:text-slate-400">Annual Savings</span>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="group flex flex-col bg-white dark:bg-[#1e2936] rounded-xl border border-[#e7edf3] dark:border-slate-700 overflow-hidden hover:shadow-xl hover:border-primary/50 transition-all duration-300 transform hover:-translate-y-1">
+<div class="h-48 w-full bg-slate-200 relative overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Fintech mobile app interface" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCDbvWacgLy4ahWuXJPyghHlxMdJ8zEAyuwEU0JeCjutmVdqzuxXFJlkp0sZC0g22ph2rj5z2-BqLPTUan8NdAIj9E-MHN0ZcHMzwwqIwfieBNJuHs_etH13GRVpmH5QnP-9Nvi5tbFi_A-upfJG68NGQj1K-7Ls69hJTALEUdqyD67jPWW8tPF8IsyWGt_jojLaPNfAH7mOVOiIqo3OFy1sGotbYhVTFubEi-a0MW2-onrtSPxw2qHWPLMixGb1eTgYCWOLdlETEk");'></div>
+<div class="absolute top-4 left-4 bg-white dark:bg-slate-800 px-3 py-1 rounded-full text-xs font-bold shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-primary">account_balance</span>
+                            Fintech
+                         </div>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<div class="flex items-center gap-3 mb-4">
+<div class="size-8 rounded bg-slate-100 dark:bg-slate-700 flex items-center justify-center font-bold text-primary">F</div>
+<div>
+<h3 class="font-bold text-lg leading-tight">FinServe Automations</h3>
+<p class="text-xs text-slate-500 dark:text-slate-400">Process Automation • Cloud</p>
+</div>
+</div>
+<div class="space-y-4 mb-6 flex-1">
+<div>
+<h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">The Challenge</h4>
+<p class="text-sm text-slate-600 dark:text-slate-300">Manual reconciliation tasks were consuming 200+ hours monthly, leading to human error and burnout.</p>
+</div>
+<div>
+<h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">The Solution</h4>
+<p class="text-sm text-slate-600 dark:text-slate-300">Deployed an automated bot framework to handle 80% of repetitive ledger tasks securely.</p>
+</div>
+</div>
+<div class="pt-4 border-t border-slate-100 dark:border-slate-700">
+<h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Key Results</h4>
+<div class="flex justify-between items-end">
+<div>
+<span class="block text-3xl font-bold text-primary font-display">200h+</span>
+<span class="text-xs font-medium text-slate-500 dark:text-slate-400">Saved Monthly</span>
+</div>
+<div class="text-right">
+<span class="block text-xl font-bold text-[#0d141b] dark:text-white font-display">0%</span>
+<span class="text-xs font-medium text-slate-500 dark:text-slate-400">Error Rate</span>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="group flex flex-col bg-white dark:bg-[#1e2936] rounded-xl border border-[#e7edf3] dark:border-slate-700 overflow-hidden hover:shadow-xl hover:border-primary/50 transition-all duration-300 transform hover:-translate-y-1">
+<div class="h-48 w-full bg-slate-200 relative overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Medical data analytics on tablet" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA49VXZteqD4UM1gvUUBKcQrfn62RBmMXuFbcIYVfEQmcE-lmqbFgVHXq8ZIkORZTdXnIEmmfaVGyWtmQ6r21gRuiB5wqS5d_DjGO-EIJqW_Id9zN0jJtOyVz7IaHNJuKxD4wSttwfywH2ErYfZi8EEahaFuw_tDZWG3-HF26y31oBQiiVPGYf0UVq-25JaASktG8T3vGCuIDPa21Z9Lam4UcOP5susCw_BQsGNP18PD9eT3nkwBKFKj9_NxNNHxZnUUpViaJodBiM");'></div>
+<div class="absolute top-4 left-4 bg-white dark:bg-slate-800 px-3 py-1 rounded-full text-xs font-bold shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-primary">monitor_heart</span>
+                            Healthcare
+                         </div>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<div class="flex items-center gap-3 mb-4">
+<div class="size-8 rounded bg-slate-100 dark:bg-slate-700 flex items-center justify-center font-bold text-primary">M</div>
+<div>
+<h3 class="font-bold text-lg leading-tight">MediCare Data Lake</h3>
+<p class="text-xs text-slate-500 dark:text-slate-400">Big Data • Compliance</p>
+</div>
+</div>
+<div class="space-y-4 mb-6 flex-1">
+<div>
+<h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">The Challenge</h4>
+<p class="text-sm text-slate-600 dark:text-slate-300">Fragmented patient records across 5 legacy systems slowed down diagnosis cycles significantly.</p>
+</div>
+<div>
+<h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">The Solution</h4>
+<p class="text-sm text-slate-600 dark:text-slate-300">Unified data architecture creating a single source of truth accessible securely via API.</p>
+</div>
+</div>
+<div class="pt-4 border-t border-slate-100 dark:border-slate-700">
+<h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Key Results</h4>
+<div class="flex justify-between items-end">
+<div>
+<span class="block text-3xl font-bold text-primary font-display">30%</span>
+<span class="text-xs font-medium text-slate-500 dark:text-slate-400">Faster Diagnosis</span>
+</div>
+<div class="text-right">
+<span class="block text-xl font-bold text-[#0d141b] dark:text-white font-display">100%</span>
+<span class="text-xs font-medium text-slate-500 dark:text-slate-400">HIPAA Compliant</span>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 4 -->
+<article class="group flex flex-col bg-white dark:bg-[#1e2936] rounded-xl border border-[#e7edf3] dark:border-slate-700 overflow-hidden hover:shadow-xl hover:border-primary/50 transition-all duration-300 transform hover:-translate-y-1">
+<div class="h-48 w-full bg-slate-200 relative overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Retail store inventory management" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC9VFIw0PKUH-j7z8dbrDgJP5123_M5A6d9_uQtSPCeIFBn1OvKc6v64xhPWRkVlHgFgrkpU_MfUudeVIsoYoBklmcT47U0lCVtxjZKl_PKumwYGq4qzPTp0ZpwsJKk9IHCs3G2LOLqVglrPMCFD_lCvX7XSqJWplFtnuvRqRinan6OdfdPSGaPGNHGFuW2br23PBcoTkHDbRxFttfpoUkUHAsDnGZitB0_2OVM9QSkd485cZsbk0XxdORSGA0Ez1fW_pZN5VZMO1s");'></div>
+<div class="absolute top-4 left-4 bg-white dark:bg-slate-800 px-3 py-1 rounded-full text-xs font-bold shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-primary">shopping_cart</span>
+                            Retail
+                         </div>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<div class="flex items-center gap-3 mb-4">
+<div class="size-8 rounded bg-slate-100 dark:bg-slate-700 flex items-center justify-center font-bold text-primary">R</div>
+<div>
+<h3 class="font-bold text-lg leading-tight">RetailFlow Inventory</h3>
+<p class="text-xs text-slate-500 dark:text-slate-400">IoT • Inventory Mgmt</p>
+</div>
+</div>
+<div class="space-y-4 mb-6 flex-1">
+<div>
+<h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">The Challenge</h4>
+<p class="text-sm text-slate-600 dark:text-slate-300">Overstocking and waste were costing the chain 15% of annual revenue.</p>
+</div>
+<div>
+<h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">The Solution</h4>
+<p class="text-sm text-slate-600 dark:text-slate-300">Real-time IoT shelf monitoring connected to an automated reordering system.</p>
+</div>
+</div>
+<div class="pt-4 border-t border-slate-100 dark:border-slate-700">
+<h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Key Results</h4>
+<div class="flex justify-between items-end">
+<div>
+<span class="block text-3xl font-bold text-primary font-display">25%</span>
+<span class="text-xs font-medium text-slate-500 dark:text-slate-400">Waste Reduction</span>
+</div>
+<div class="text-right">
+<span class="block text-xl font-bold text-[#0d141b] dark:text-white font-display">15%</span>
+<span class="text-xs font-medium text-slate-500 dark:text-slate-400">Revenue Recouped</span>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 5 -->
+<article class="group flex flex-col bg-white dark:bg-[#1e2936] rounded-xl border border-[#e7edf3] dark:border-slate-700 overflow-hidden hover:shadow-xl hover:border-primary/50 transition-all duration-300 transform hover:-translate-y-1">
+<div class="h-48 w-full bg-slate-200 relative overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Industrial robotic arm in factory" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDRMyNs_YPleDXiIkNPSg8-_KvOylrG0lZCSQ3CJx4s1LQb-kmJmiJ69apmHB2GyPqsSY8ZewxLUuT8oKXchfanY7Ird-lACyBG31jV2DFE9WsxLoX24BbBDcJMXc5fbKZnXPUIS3VUohztcp2nJthl0WMhR3c9PeDHAY2Jh6Ot6_5Yo0bHi-SOR4BvMDX14vGXCnecdzpH54VfZlLBbnW2UVOKFHRcGk0rl3OEwLZdZFUVg5lIQxcepFDLbQvZZAUUov_dmiwjniM");'></div>
+<div class="absolute top-4 left-4 bg-white dark:bg-slate-800 px-3 py-1 rounded-full text-xs font-bold shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-primary">precision_manufacturing</span>
+                            Manufacturing
+                         </div>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<div class="flex items-center gap-3 mb-4">
+<div class="size-8 rounded bg-slate-100 dark:bg-slate-700 flex items-center justify-center font-bold text-primary">S</div>
+<div>
+<h3 class="font-bold text-lg leading-tight">SmartFactory IoT</h3>
+<p class="text-xs text-slate-500 dark:text-slate-400">Industrial IoT • AI</p>
+</div>
+</div>
+<div class="space-y-4 mb-6 flex-1">
+<div>
+<h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">The Challenge</h4>
+<p class="text-sm text-slate-600 dark:text-slate-300">Unexpected machinery downtime was halting production lines for hours each week.</p>
+</div>
+<div>
+<h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">The Solution</h4>
+<p class="text-sm text-slate-600 dark:text-slate-300">Predictive maintenance sensors alerting engineers before failure points occur.</p>
+</div>
+</div>
+<div class="pt-4 border-t border-slate-100 dark:border-slate-700">
+<h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Key Results</h4>
+<div class="flex justify-between items-end">
+<div>
+<span class="block text-3xl font-bold text-primary font-display">99.9%</span>
+<span class="text-xs font-medium text-slate-500 dark:text-slate-400">Uptime</span>
+</div>
+<div class="text-right">
+<span class="block text-xl font-bold text-[#0d141b] dark:text-white font-display">+15%</span>
+<span class="text-xs font-medium text-slate-500 dark:text-slate-400">Efficiency</span>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 6 -->
+<article class="group flex flex-col bg-white dark:bg-[#1e2936] rounded-xl border border-[#e7edf3] dark:border-slate-700 overflow-hidden hover:shadow-xl hover:border-primary/50 transition-all duration-300 transform hover:-translate-y-1">
+<div class="h-48 w-full bg-slate-200 relative overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Office meeting collaboration" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCc1CFryImXk26wrap-pcjXpgvdwMbZI9womuVHGmMz8afyduoJLagcF7seqnFRqYPGGYl68ikTHNfWTiCKcFk3HNdd1kv6r5lw6O2JotwZ0mXkpZXWXeGcbnbK7QBAVE6DxktRaTD4YJdGILpg7LyvQbhVHtTrM_5aZo_RBaSnIonoWwCkobJLMzEp6AgRR-M68az5qoitcut9yiCILmqjJmtXL8IZjwd29kz1WvhBAk2wQn_UFE-W0_nhGNWiUPi_hn9hbSbiFiA");'></div>
+<div class="absolute top-4 left-4 bg-white dark:bg-slate-800 px-3 py-1 rounded-full text-xs font-bold shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-primary">group</span>
+                            HR Tech
+                         </div>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<div class="flex items-center gap-3 mb-4">
+<div class="size-8 rounded bg-slate-100 dark:bg-slate-700 flex items-center justify-center font-bold text-primary">T</div>
+<div>
+<h3 class="font-bold text-lg leading-tight">TalentMatch AI</h3>
+<p class="text-xs text-slate-500 dark:text-slate-400">Recruiting • AI Matching</p>
+</div>
+</div>
+<div class="space-y-4 mb-6 flex-1">
+<div>
+<h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">The Challenge</h4>
+<p class="text-sm text-slate-600 dark:text-slate-300">Recruiters spent 70% of their time screening unqualified resumes manually.</p>
+</div>
+<div>
+<h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">The Solution</h4>
+<p class="text-sm text-slate-600 dark:text-slate-300">AI-driven candidate scoring system that surfaces top talent instantly.</p>
+</div>
+</div>
+<div class="pt-4 border-t border-slate-100 dark:border-slate-700">
+<h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Key Results</h4>
+<div class="flex justify-between items-end">
+<div>
+<span class="block text-3xl font-bold text-primary font-display">3x</span>
+<span class="text-xs font-medium text-slate-500 dark:text-slate-400">Faster Hiring</span>
+</div>
+<div class="text-right">
+<span class="block text-xl font-bold text-[#0d141b] dark:text-white font-display">60%</span>
+<span class="text-xs font-medium text-slate-500 dark:text-slate-400">Cost Reduction</span>
+</div>
+</div>
+</div>
+</div>
+</article>
+</div>
+<!-- Pagination / More -->
+<div class="flex justify-center mt-12">
+<button class="flex items-center gap-2 px-6 py-3 rounded-lg border border-[#cfdbe7] dark:border-slate-700 bg-white dark:bg-slate-800 text-sm font-bold hover:border-primary hover:text-primary transition-all">
+                    Load More Case Studies
+                    <span class="material-symbols-outlined text-lg">arrow_downward</span>
+</button>
+</div>
+</section>
+<!-- Social Proof Strip -->
+<section class="bg-white dark:bg-[#1a2632] py-16 border-t border-[#e7edf3] dark:border-slate-800">
+<div class="max-w-7xl mx-auto px-4 md:px-10">
+<p class="text-center text-slate-500 text-sm font-semibold uppercase tracking-widest mb-10">Trusted by forward-thinking companies</p>
+<div class="flex flex-wrap justify-center items-center gap-12 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+<div class="text-2xl font-black font-display text-slate-800 dark:text-slate-200">LogiStream</div>
+<div class="text-2xl font-black font-display text-slate-800 dark:text-slate-200">FinServe</div>
+<div class="text-2xl font-black font-display text-slate-800 dark:text-slate-200">MediCare</div>
+<div class="text-2xl font-black font-display text-slate-800 dark:text-slate-200">RetailFlow</div>
+<div class="text-2xl font-black font-display text-slate-800 dark:text-slate-200">GlobalShip</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-20 px-4 md:px-10 bg-[#f6f7f8] dark:bg-[#101922]">
+<div class="max-w-4xl mx-auto bg-primary rounded-2xl p-10 md:p-16 text-center relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-full opacity-10" style="background-image: radial-gradient(white 1px, transparent 1px); background-size: 20px 20px;"></div>
+<div class="relative z-10">
+<h2 class="text-3xl md:text-5xl font-bold text-white mb-6 font-display">Ready to build your success story?</h2>
+<p class="text-blue-100 text-lg mb-8 max-w-xl mx-auto">Join the companies using Zyshaire to engineer measurable growth and efficiency.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="px-8 py-3 rounded-lg bg-white text-primary font-bold hover:bg-slate-100 transition-colors shadow-lg">
+                            Start Your Project
+                        </button>
+<button class="px-8 py-3 rounded-lg bg-transparent border-2 border-white text-white font-bold hover:bg-white/10 transition-colors">
+                            Contact Sales
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-white dark:bg-[#1a2632] border-t border-[#e7edf3] dark:border-slate-800 py-10 px-10">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-2">
+<div class="size-6 text-primary">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 6H42L36 24L42 42H6L12 24L6 6Z"></path>
+</svg>
+</div>
+<span class="text-lg font-bold font-display">Zyshaire</span>
+</div>
+<div class="text-sm text-slate-500">
+                    © 2023 Zyshaire Inc. All rights reserved.
+                </div>
+<div class="flex gap-6">
+<a class="text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">alternate_email</span>
+</a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">public</span>
+</a>
+</div>
+</div>
+</footer>
+</main>
+</body></html>
