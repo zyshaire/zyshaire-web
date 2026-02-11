@@ -9,6 +9,11 @@ on:
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
+    env:
+      VITE_FORMSPREE_CONTACT_FORM_ID: ${{ vars.VITE_FORMSPREE_CONTACT_FORM_ID }}
+      VITE_FORMSPREE_NEWSLETTER_FORM_ID: ${{ vars.VITE_FORMSPREE_NEWSLETTER_FORM_ID }}
+      VITE_FORMSPREE_AUDIT_FORM_ID: ${{ vars.VITE_FORMSPREE_AUDIT_FORM_ID }}
+
     steps:
       - uses: actions/checkout@v4
       - run: cd website && npm ci && npm run build
