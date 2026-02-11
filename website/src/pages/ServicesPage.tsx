@@ -31,7 +31,7 @@ export function ServicesPage() {
         badge="Business Outcomes First"
         title="Services Built Around"
         highlight="Business Outcomes"
-        description="From custom SaaS engineering to AI workflow integration, we build practical systems that improve business performance."
+        description="From Flash MVP sprints and custom SaaS engineering to AI workflow integration, we build practical systems that improve business performance."
         primaryCta={{ label: 'Book Consultation', href: '/contact' }}
       />
 

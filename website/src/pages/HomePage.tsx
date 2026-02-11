@@ -1,18 +1,37 @@
-import { Link } from 'react-router-dom';
-import { CaseStudyCard } from '../components/common/CaseStudyCard';
+// Temporarily hidden: success stories/case studies section is disabled.
+// import { Link } from 'react-router-dom';
+// import { CaseStudyCard } from '../components/common/CaseStudyCard';
 import { Container } from '../components/common/Container';
 import { CtaBanner } from '../components/common/CtaBanner';
 import { PageHero } from '../components/common/PageHero';
 import { SectionHeading } from '../components/common/SectionHeading';
 import { ServiceCard } from '../components/common/ServiceCard';
-import { StatsStrip } from '../components/common/StatsStrip';
-import { caseStudies, homepageStats, services } from '../data/site-data';
+import { services } from '../data/site-data';
 
 const processSteps = [
   { title: 'Discover', description: 'We map bottlenecks, goals, and constraints with stakeholders.' },
   { title: 'Architect', description: 'We design a scalable technical approach aligned to outcomes.' },
   { title: 'Build', description: 'We execute in iterative delivery cycles with clear milestones.' },
   { title: 'Measure', description: 'We monitor business KPIs and optimize continuously.' },
+];
+
+const founderProofPillars = [
+  {
+    title: 'Flash MVP in 2 Weeks',
+    description: 'We help founders validate ideas quickly with rapid, high-utility MVP builds.',
+  },
+  {
+    title: 'AI-Assisted Engineering',
+    description: 'We use AI-assisted delivery workflows to accelerate implementation without sacrificing quality.',
+  },
+  {
+    title: 'Founder-Friendly Cost Profile',
+    description: 'Validate product direction without carrying the cost of a full team for months.',
+  },
+  {
+    title: 'Clear Path to Production',
+    description: 'Every MVP includes guidance on what to harden next for production readiness.',
+  },
 ];
 
 export function HomePage() {
@@ -28,7 +47,18 @@ export function HomePage() {
         secondaryCta={{ label: 'Request AI Audit', href: '/ai-audit' }}
       />
 
-      <StatsStrip items={homepageStats} />
+      <section className="border-y border-slate-200 bg-white py-12">
+        <Container>
+          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            {founderProofPillars.map((item) => (
+              <article key={item.title} className="rounded-xl border border-slate-200 bg-background-light p-5">
+                <h3 className="font-display text-lg font-bold text-text-main">{item.title}</h3>
+                <p className="mt-2 text-sm text-text-muted">{item.description}</p>
+              </article>
+            ))}
+          </div>
+        </Container>
+      </section>
 
       <section className="py-16">
         <Container>
@@ -92,7 +122,8 @@ export function HomePage() {
         </Container>
       </section>
 
-      <section className="bg-white py-16">
+      {/* Temporarily hidden: success stories section will be added back later. */}
+      {/* <section className="bg-white py-16">
         <Container>
           <div className="mb-8 flex items-end justify-between gap-4">
             <SectionHeading title="Recent Success Stories" description="Selected examples of measurable business outcomes." />
@@ -106,7 +137,7 @@ export function HomePage() {
             ))}
           </div>
         </Container>
-      </section>
+      </section> */}
 
       <section className="py-16">
         <Container>

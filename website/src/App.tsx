@@ -2,7 +2,8 @@ import { Navigate, Route, Routes } from 'react-router-dom';
 import { MainLayout } from './components/layout/MainLayout';
 import { AIAuditPage } from './pages/AIAuditPage';
 import { AboutPage } from './pages/AboutPage';
-import { CaseStudiesPage } from './pages/CaseStudiesPage';
+// Temporarily hidden: keep the page file for future re-enable.
+// import { CaseStudiesPage } from './pages/CaseStudiesPage';
 import { ContactPage } from './pages/ContactPage';
 import { HomePage } from './pages/HomePage';
 import { InsightsPage } from './pages/InsightsPage';
@@ -17,7 +18,8 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/ai-audit" element={<AIAuditPage />} />
-        <Route path="/case-studies" element={<CaseStudiesPage />} />
+        {/* Temporarily hidden: case studies route disabled. */}
+        {/* <Route path="/case-studies" element={<CaseStudiesPage />} /> */}
         <Route path="/about" element={<AboutPage />} />
         <Route path="/insights" element={<InsightsPage />} />
         <Route path="/contact" element={<ContactPage />} />

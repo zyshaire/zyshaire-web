@@ -1,7 +1,14 @@
 import { Link } from 'react-router-dom';
 import { Container } from '../common/Container';
 
-const serviceLinks = ['Web Development', 'Enterprise Solutions', 'AI Integration', 'AI Audit'];
+const serviceLinks = [
+  'Web Development',
+  'Flash MVP',
+  // Temporarily hidden: enterprise tier removed from catalog.
+  // 'Enterprise Solutions',
+  'AI Integration',
+  'AI Audit',
+];
 
 export function Footer() {
   return (
@@ -10,7 +17,7 @@ export function Footer() {
         <div className="grid gap-10 pb-10 md:grid-cols-2 lg:grid-cols-4">
           <div>
             <div className="mb-3 flex items-center gap-2">
-              <span className="inline-flex h-7 w-7 items-center justify-center rounded-md bg-primary text-xs font-bold text-white">Z</span>
+              <img src="/zyshaire-logo.svg" alt="Zyshaire logo" className="h-7 w-7 rounded-md object-contain" />
               <p className="font-display text-lg font-bold">Zyshaire</p>
             </div>
             <p className="text-sm text-text-muted">
@@ -35,11 +42,12 @@ export function Footer() {
                   About
                 </Link>
               </li>
-              <li>
+              {/* Temporarily hidden: case studies section is disabled. */}
+              {/* <li>
                 <Link className="text-text-muted hover:text-primary" to="/case-studies">
                   Case Studies
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link className="text-text-muted hover:text-primary" to="/insights">
                   Insights

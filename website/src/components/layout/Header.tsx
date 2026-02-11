@@ -11,9 +11,7 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur">
       <Container className="flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
-          <span className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-primary/10 font-display text-sm font-bold text-primary">
-            Z
-          </span>
+          <img src="/zyshaire-logo.svg" alt="Zyshaire logo" className="h-8 w-8 rounded-lg object-contain" />
           <span className="font-display text-xl font-bold tracking-tight text-text-main">Zyshaire</span>
         </Link>
 

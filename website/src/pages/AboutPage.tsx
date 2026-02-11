@@ -18,12 +18,13 @@ const principles = [
   },
 ];
 
-const team = [
-  ['David Chen', 'Founder & CEO'],
-  ['Sarah Al-Fayed', 'CTO'],
-  ['Marcus Johnson', 'Head of Engineering'],
-  ['Elena Rodriguez', 'Product Lead'],
-];
+// Temporarily hidden: individual team profile cards will be re-enabled later.
+// const team = [
+//   ['David Chen', 'Founder & CEO'],
+//   ['Sarah Al-Fayed', 'CTO'],
+//   ['Marcus Johnson', 'Head of Engineering'],
+//   ['Elena Rodriguez', 'Product Lead'],
+// ];
 
 export function AboutPage() {
   return (
@@ -81,7 +82,8 @@ export function AboutPage() {
         </Container>
       </section>
 
-      <section className="bg-white py-16">
+      {/* Temporarily hidden: detailed "Meet the Builders" profile section. */}
+      {/* <section className="bg-white py-16">
         <Container>
           <SectionHeading title="Meet the Builders" />
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -92,6 +94,20 @@ export function AboutPage() {
                 <p className="text-sm text-primary">{role}</p>
               </article>
             ))}
+          </div>
+        </Container>
+      </section> */}
+
+      <section className="bg-white py-16">
+        <Container>
+          <SectionHeading
+            title="Our Team Capability"
+            description="We have a highly capable team of full-stack engineers and AI engineers focused on delivering high-quality products with AI-assisted execution."
+          />
+          <div className="rounded-2xl border border-slate-200 bg-background-light p-6 sm:p-8">
+            <p className="text-base leading-relaxed text-text-muted sm:text-lg">
+              Zyshaire operates with a delivery-focused engineering team that combines strong product development expertise with practical AI implementation skills. We use AI assistance extensively to increase speed and maintain quality while shipping reliable MVPs and scalable systems.
+            </p>
           </div>
         </Container>
       </section>
