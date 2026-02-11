@@ -1,8 +1,10 @@
+import { ValidationError, useForm } from '@formspree/react';
 import { Container } from '../components/common/Container';
 import { FaqAccordion } from '../components/common/FaqAccordion';
 import { PageHero } from '../components/common/PageHero';
 import { SectionHeading } from '../components/common/SectionHeading';
 import { auditFaqs } from '../data/site-data';
+import { getFormspreeFormId, isFormspreeConfigured } from '../lib/formspree';
 
 const deliverables = [
   'ROI estimate and impact model',
@@ -22,6 +24,9 @@ const method = [
 ];
 
 export function AIAuditPage() {
+  const [state, handleSubmit] = useForm(getFormspreeFormId('audit'));
+  const isConfigured = isFormspreeConfigured('audit');
+
   return (
     <>
       <PageHero
@@ -106,24 +111,56 @@ export function AIAuditPage() {
               <h3 className="font-display text-2xl font-bold text-text-main">Request an AI Audit</h3>
               <p className="mt-3 text-sm text-text-muted">Share your current bottlenecks and we will scope the best audit path.</p>
             </div>
-            <form className="grid gap-4 lg:col-span-2 md:grid-cols-2">
-              <input className="rounded-lg border border-slate-300 px-3 py-2" placeholder="Full Name" />
-              <input className="rounded-lg border border-slate-300 px-3 py-2" placeholder="Work Email" type="email" />
-              <input className="rounded-lg border border-slate-300 px-3 py-2" placeholder="Company" />
-              <input className="rounded-lg border border-slate-300 px-3 py-2" placeholder="Role" />
-              <select className="rounded-lg border border-slate-300 px-3 py-2">
-                <option>Team Size</option>
-                <option>1-10</option>
-                <option>11-50</option>
-                <option>51-200</option>
-                <option>200+</option>
-              </select>
-              <input className="rounded-lg border border-slate-300 px-3 py-2" placeholder="Preferred timeline" />
-              <textarea className="col-span-full rounded-lg border border-slate-300 px-3 py-2" placeholder="Biggest operational bottleneck" rows={4} />
-              <button className="col-span-full rounded-lg bg-primary px-4 py-3 text-sm font-semibold text-white hover:bg-blue-600" type="button">
-                Submit Audit Request
-              </button>
-            </form>
+            <div className="lg:col-span-2">
+              {!isConfigured ? (
+                <div className="mb-4 rounded-lg border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-800">
+                  Formspree is not configured yet. Add `VITE_FORMSPREE_FORM_ID` (or `VITE_FORMSPREE_AUDIT_FORM_ID`) in your `.env` file.
+                </div>
+              ) : null}
+
+              {state.succeeded ? (
+                <div className="rounded-lg border border-green-200 bg-green-50 px-4 py-3 text-sm text-green-800">
+                  Thanks. Your AI audit request was submitted successfully. We will contact you shortly.
+                </div>
+              ) : (
+                <form className="grid gap-4 md:grid-cols-2" onSubmit={isConfigured ? handleSubmit : (event) => event.preventDefault()}>
+                  <input className="rounded-lg border border-slate-300 px-3 py-2" name="fullName" placeholder="Full Name" required />
+                  <input className="rounded-lg border border-slate-300 px-3 py-2" name="email" placeholder="Work Email" required type="email" />
+                  <ValidationError className="md:col-span-2 text-sm text-red-600" errors={state.errors} field="email" prefix="Email" />
+                  <input className="rounded-lg border border-slate-300 px-3 py-2" name="company" placeholder="Company" required />
+                  <input className="rounded-lg border border-slate-300 px-3 py-2" name="role" placeholder="Role" required />
+                  <select className="rounded-lg border border-slate-300 px-3 py-2" name="teamSize" required>
+                    <option value="">Team Size</option>
+                    <option>1-10</option>
+                    <option>11-50</option>
+                    <option>51-200</option>
+                    <option>200+</option>
+                  </select>
+                  <input className="rounded-lg border border-slate-300 px-3 py-2" name="preferredTimeline" placeholder="Preferred timeline" required />
+                  <textarea
+                    className="col-span-full rounded-lg border border-slate-300 px-3 py-2"
+                    name="biggestBottleneck"
+                    placeholder="Biggest operational bottleneck"
+                    required
+                    rows={4}
+                  />
+                  <ValidationError
+                    className="col-span-full text-sm text-red-600"
+                    errors={state.errors}
+                    field="biggestBottleneck"
+                    prefix="Biggest operational bottleneck"
+                  />
+                  <input name="formType" type="hidden" value="AI Audit Request" />
+                  <button
+                    className="col-span-full rounded-lg bg-primary px-4 py-3 text-sm font-semibold text-white hover:bg-blue-600 disabled:cursor-not-allowed disabled:opacity-60"
+                    disabled={state.submitting || !isConfigured}
+                    type="submit"
+                  >
+                    {state.submitting ? 'Submitting...' : 'Submit Audit Request'}
+                  </button>
+                </form>
+              )}
+            </div>
           </div>
         </Container>
       </section>
