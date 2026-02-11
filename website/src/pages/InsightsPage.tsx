@@ -28,12 +28,13 @@ const articles = [
     readTime: '5 min read',
     excerpt: 'Designing AI processes with oversight for reliability, trust, and measurable quality.',
   },
-  {
-    title: 'Case Study: 300% Ops Efficiency Increase',
-    topic: 'Case Studies',
-    readTime: '3 min read',
-    excerpt: 'How one team restructured workflows and tooling to dramatically improve execution speed.',
-  },
+  // Temporarily hidden: case studies content section is disabled.
+  // {
+  //   title: 'Case Study: 300% Ops Efficiency Increase',
+  //   topic: 'Case Studies',
+  //   readTime: '3 min read',
+  //   excerpt: 'How one team restructured workflows and tooling to dramatically improve execution speed.',
+  // },
   {
     title: 'No-Code and Custom Engineering: The Right Mix',
     topic: 'SaaS Optimization',

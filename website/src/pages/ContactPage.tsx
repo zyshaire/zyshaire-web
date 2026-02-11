@@ -44,8 +44,8 @@ export function ContactPage() {
 
                 <div className="col-span-full">
                   <p className="mb-2 text-sm font-semibold text-text-main">Service Interest</p>
-                  <div className="grid gap-3 sm:grid-cols-3">
-                    {['SaaS Development', 'AI Systems', 'Consulting'].map((service) => (
+                  <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+                    {['SaaS Development', 'Flash MVP', 'AI Systems', 'Consulting'].map((service) => (
                       <label key={service} className="rounded-lg border border-slate-300 p-3 text-center text-sm text-text-main">
                         <input className="mr-2" name="service" type="radio" />
                         {service}

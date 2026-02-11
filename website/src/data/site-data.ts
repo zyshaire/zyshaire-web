@@ -3,7 +3,8 @@ import type { CaseStudyItem, FaqItem, NavItem, ServiceItem, StatItem } from '../
 export const navItems: NavItem[] = [
   { label: 'Services', href: '/services' },
   { label: 'AI Audit', href: '/ai-audit' },
-  { label: 'Case Studies', href: '/case-studies' },
+  // Temporarily hidden: case studies will be re-enabled later.
+  // { label: 'Case Studies', href: '/case-studies' },
   { label: 'Insights', href: '/insights' },
   { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact' },
@@ -33,20 +34,36 @@ export const services: ServiceItem[] = [
     ],
   },
   {
-    title: 'Enterprise Solutions',
+    title: 'Flash MVP',
     description:
-      'Business-critical systems that unify data, automate operations, and support compliance at enterprise scale.',
+      'For founders and entrepreneurs, we rapidly build an MVP in up to two weeks using AI-assisted engineering so you can validate ideas without hiring a full team.',
     problems: [
-      'Data silos across teams',
-      'Manual operational workflows',
-      'Security and governance risks',
+      'Long build cycles that delay idea validation',
+      'High initial cost before product-market signal',
+      'Need for a clickable and testable product quickly',
     ],
     deliverables: [
-      'Custom ERP and internal platforms',
-      'Migration and data architecture plans',
-      'Role-based access and audit trails',
+      'Functional MVP prototype in up to 2 weeks',
+      'Core user flow implementation for validation',
+      'Technical handoff plan for production hardening',
     ],
   },
+  // Temporarily hidden: enterprise tier removed from catalog for now.
+  // {
+  //   title: 'Enterprise Solutions',
+  //   description:
+  //     'Business-critical systems that unify data, automate operations, and support compliance at enterprise scale.',
+  //   problems: [
+  //     'Data silos across teams',
+  //     'Manual operational workflows',
+  //     'Security and governance risks',
+  //   ],
+  //   deliverables: [
+  //     'Custom ERP and internal platforms',
+  //     'Migration and data architecture plans',
+  //     'Role-based access and audit trails',
+  //   ],
+  // },
   {
     title: 'AI Workflow Integration',
     description:
@@ -130,6 +147,11 @@ export const serviceFaqs: FaqItem[] = [
     answer:
       'We support post-launch optimization, monitoring, and roadmap iterations through project, retainer, or fractional engagement models.',
   },
+  {
+    question: 'What is Flash MVP?',
+    answer:
+      'Flash MVP is our rapid build track for founders where we deliver a high-utility MVP in up to two weeks to help validate product direction quickly.',
+  },
 ];
 
 export const auditFaqs: FaqItem[] = [
@@ -164,4 +186,11 @@ export const contactFaqs: FaqItem[] = [
   },
 ];
 
-export const insightTopics = ['All', 'AI Workflows', 'Enterprise Engineering', 'SaaS Optimization', 'Case Studies'];
+export const insightTopics = [
+  'All',
+  'AI Workflows',
+  'Enterprise Engineering',
+  'SaaS Optimization',
+  // Temporarily hidden: case studies section is disabled.
+  // 'Case Studies',
+];
