@@ -1,7 +1,9 @@
+import { ValidationError, useForm } from '@formspree/react';
 import { Container } from '../components/common/Container';
 import { PageHero } from '../components/common/PageHero';
 import { SectionHeading } from '../components/common/SectionHeading';
 import { insightTopics } from '../data/site-data';
+import { getFormspreeFormId, isFormspreeConfigured } from '../lib/formspree';
 
 const articles = [
   {
@@ -44,6 +46,10 @@ const articles = [
 ];
 
 export function InsightsPage() {
+  const [playbookState, handlePlaybookSubmit] = useForm(getFormspreeFormId('newsletter'));
+  const [newsletterState, handleNewsletterSubmit] = useForm(getFormspreeFormId('newsletter'));
+  const isConfigured = isFormspreeConfigured('newsletter');
+
   return (
     <>
       <PageHero
@@ -95,12 +101,38 @@ export function InsightsPage() {
             <p className="mt-4 max-w-3xl text-sm text-slate-300 sm:text-base">
               Download our practical guide for implementing AI safely with governance, measurement, and rollout discipline.
             </p>
-            <div className="mt-6 flex max-w-xl flex-col gap-3 sm:flex-row">
-              <input className="w-full rounded-lg border border-white/20 bg-white/10 px-4 py-2 text-sm text-white" placeholder="Enter business email" />
-              <button className="rounded-lg bg-primary px-5 py-2 text-sm font-semibold text-white hover:bg-blue-600" type="button">
-                Download Playbook
-              </button>
-            </div>
+            {!isConfigured ? (
+              <div className="mt-6 rounded-lg border border-amber-200/30 bg-amber-50/10 px-4 py-3 text-sm text-amber-100">
+                Configure `VITE_FORMSPREE_FORM_ID` or `VITE_FORMSPREE_NEWSLETTER_FORM_ID` to enable this form.
+              </div>
+            ) : null}
+            {playbookState.succeeded ? (
+              <div className="mt-6 rounded-lg border border-green-300/30 bg-green-500/10 px-4 py-3 text-sm text-green-100">
+                Thanks. Check your inbox for the playbook details.
+              </div>
+            ) : (
+              <form
+                className="mt-6 flex max-w-xl flex-col gap-3 sm:flex-row"
+                onSubmit={isConfigured ? handlePlaybookSubmit : (event) => event.preventDefault()}
+              >
+                <input
+                  className="w-full rounded-lg border border-white/20 bg-white/10 px-4 py-2 text-sm text-white"
+                  name="email"
+                  placeholder="Enter business email"
+                  required
+                  type="email"
+                />
+                <ValidationError className="text-sm text-red-200 sm:basis-full" errors={playbookState.errors} field="email" prefix="Email" />
+                <input name="formType" type="hidden" value="Playbook Download Request" />
+                <button
+                  className="rounded-lg bg-primary px-5 py-2 text-sm font-semibold text-white hover:bg-blue-600 disabled:cursor-not-allowed disabled:opacity-60"
+                  disabled={playbookState.submitting || !isConfigured}
+                  type="submit"
+                >
+                  {playbookState.submitting ? 'Sending...' : 'Download Playbook'}
+                </button>
+              </form>
+            )}
           </div>
         </Container>
       </section>
@@ -109,12 +141,27 @@ export function InsightsPage() {
         <Container className="max-w-3xl text-center">
           <h3 className="font-display text-3xl font-bold text-text-main">Stay ahead of the curve</h3>
           <p className="mt-4 text-text-muted">Get weekly practical insights on SaaS architecture, AI integration, and operational scale.</p>
-          <form className="mx-auto mt-7 flex max-w-lg flex-col gap-3 sm:flex-row">
-            <input className="w-full rounded-lg border border-slate-300 px-4 py-2" placeholder="Enter your email" type="email" />
-            <button className="rounded-lg bg-text-main px-5 py-2 text-sm font-semibold text-white" type="submit">
-              Subscribe
-            </button>
-          </form>
+          {newsletterState.succeeded ? (
+            <div className="mx-auto mt-7 max-w-lg rounded-lg border border-green-200 bg-green-50 px-4 py-3 text-sm text-green-800">
+              Subscribed successfully. Thanks for joining.
+            </div>
+          ) : (
+            <form
+              className="mx-auto mt-7 flex max-w-lg flex-col gap-3 sm:flex-row"
+              onSubmit={isConfigured ? handleNewsletterSubmit : (event) => event.preventDefault()}
+            >
+              <input className="w-full rounded-lg border border-slate-300 px-4 py-2" name="email" placeholder="Enter your email" required type="email" />
+              <ValidationError className="text-left text-sm text-red-600 sm:basis-full" errors={newsletterState.errors} field="email" prefix="Email" />
+              <input name="formType" type="hidden" value="Insights Newsletter Subscription" />
+              <button
+                className="rounded-lg bg-text-main px-5 py-2 text-sm font-semibold text-white disabled:cursor-not-allowed disabled:opacity-60"
+                disabled={newsletterState.submitting || !isConfigured}
+                type="submit"
+              >
+                {newsletterState.submitting ? 'Subscribing...' : 'Subscribe'}
+              </button>
+            </form>
+          )}
         </Container>
       </section>
     </>
