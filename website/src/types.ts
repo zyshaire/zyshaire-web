@@ -22,6 +22,7 @@ export type CaseStudyItem = {
   solution: string;
   primaryResult: string;
   secondaryResult: string;
+  demoUrl?: string;
 };
 
 export type FaqItem = {

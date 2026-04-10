@@ -23,6 +23,16 @@ export function CaseStudyCard({ item }: CaseStudyCardProps) {
         <p className="text-sm font-semibold text-primary">{item.primaryResult}</p>
         <p className="text-right text-sm font-semibold text-text-main">{item.secondaryResult}</p>
       </div>
+      {item.demoUrl && (
+        <a
+          href={item.demoUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:underline"
+        >
+          ▶ Watch Demo
+        </a>
+      )}
     </article>
   );
 }

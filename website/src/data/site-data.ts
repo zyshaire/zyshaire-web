@@ -3,8 +3,7 @@ import type { CaseStudyItem, FaqItem, NavItem, ServiceItem, StatItem } from '../
 export const navItems: NavItem[] = [
   { label: 'Services', href: '/services' },
   { label: 'AI Audit', href: '/ai-audit' },
-  // Temporarily hidden: case studies will be re-enabled later.
-  // { label: 'Case Studies', href: '/case-studies' },
+  { label: 'Projects', href: '/projects' },
   { label: 'Insights', href: '/insights' },
   { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact' },
@@ -98,36 +97,26 @@ export const services: ServiceItem[] = [
 
 export const caseStudies: CaseStudyItem[] = [
   {
-    title: 'LogiStream AI Routing',
-    industry: 'Logistics',
-    challenge: 'Regional shipment delays caused by disconnected systems and manual planning.',
-    solution: 'Implemented predictive routing based on real-time demand, traffic, and weather.',
-    primaryResult: '45% faster delivery cycles',
-    secondaryResult: '$2M annual savings',
+    title: 'Zyshaire Restaurant',
+    industry: 'Restaurant Tech',
+    challenge:
+      'Restaurant owners had no single place to manage menus, orders, and table bookings — operations were fragmented and the customer-facing experience was limited to phone calls.',
+    solution:
+      'Built a full-stack dual-sided platform: an owner admin panel to manage menus, live orders, and table reservations, and a customer-facing app to browse daily menus, place orders, and book tables online.',
+    primaryResult: 'Unified admin & customer app',
+    secondaryResult: 'End-to-end ops in one platform',
+    demoUrl: 'https://www.youtube.com/watch?v=bZWKUfOd5fQ',
   },
   {
-    title: 'FinServe Automations',
-    industry: 'Fintech',
-    challenge: 'Finance teams spent 200+ hours each month on repetitive reconciliation tasks.',
-    solution: 'Built secure automation workflows to handle repetitive data-heavy operations.',
-    primaryResult: '200+ hours saved monthly',
-    secondaryResult: 'Near-zero reconciliation errors',
-  },
-  {
-    title: 'MediCare Data Lake',
-    industry: 'Healthcare',
-    challenge: 'Patient data spread across multiple legacy systems reduced care efficiency.',
-    solution: 'Designed and deployed a compliant unified data architecture with secure access.',
-    primaryResult: '30% faster diagnosis operations',
-    secondaryResult: '100% HIPAA-aligned controls',
-  },
-  {
-    title: 'TalentMatch AI',
-    industry: 'HR Tech',
-    challenge: 'Recruiting teams spent most of their time manually screening resumes.',
-    solution: 'Introduced AI candidate scoring to prioritize high-fit applicants quickly.',
-    primaryResult: '3x faster hiring cycles',
-    secondaryResult: '60% lower recruitment costs',
+    title: 'Conversational AI Receptionist',
+    industry: 'Conversational AI',
+    challenge:
+      'Dental clinics and service businesses lose staff hours fielding repetitive inbound calls for availability, scheduling, and appointment booking — with no option for 24/7 coverage.',
+    solution:
+      'Built a conversational AI that handles inbound calls autonomously — answering queries about doctor availability, sharing channeling and clinic information, and booking appointments by capturing patient details without human involvement.',
+    primaryResult: '24/7 automated call handling',
+    secondaryResult: 'Zero hold time for patients',
+    demoUrl: 'https://www.youtube.com/watch?v=jLnO9f3NWKI',
   },
 ];
 
@@ -191,6 +180,4 @@ export const insightTopics = [
   'AI Workflows',
   'Enterprise Engineering',
   'SaaS Optimization',
-  // Temporarily hidden: case studies section is disabled.
-  // 'Case Studies',
 ];

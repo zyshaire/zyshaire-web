@@ -9,6 +9,7 @@ import { HomePage } from './pages/HomePage';
 import { InsightsPage } from './pages/InsightsPage';
 import { LegalPage } from './pages/LegalPage';
 import { NotFoundPage } from './pages/NotFoundPage';
+import { ProjectsPage } from './pages/ProjectsPage';
 import { ServicesPage } from './pages/ServicesPage';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/ai-audit" element={<AIAuditPage />} />
         {/* Temporarily hidden: case studies route disabled. */}
         {/* <Route path="/case-studies" element={<CaseStudiesPage />} /> */}
+        <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/insights" element={<InsightsPage />} />
         <Route path="/contact" element={<ContactPage />} />

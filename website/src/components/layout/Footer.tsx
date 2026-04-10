@@ -42,12 +42,11 @@ export function Footer() {
                   About
                 </Link>
               </li>
-              {/* Temporarily hidden: case studies section is disabled. */}
-              {/* <li>
-                <Link className="text-text-muted hover:text-primary" to="/case-studies">
-                  Case Studies
+              <li>
+                <Link className="text-text-muted hover:text-primary" to="/projects">
+                  Projects
                 </Link>
-              </li> */}
+              </li>
               <li>
                 <Link className="text-text-muted hover:text-primary" to="/insights">
                   Insights
