@@ -32,8 +32,8 @@ export function ContactPage() {
                 <p className="mt-2 text-sm text-text-muted">hello@zyshaire.com</p>
               </article>
               <article className="rounded-2xl border border-slate-200 bg-white p-6">
-                <h3 className="font-display text-xl font-bold text-text-main">Office HQ</h3>
-                <p className="mt-2 text-sm text-text-muted">123 Innovation Drive, Tech City, CA</p>
+                <h3 className="font-display text-xl font-bold text-text-main">Address</h3>
+                <p className="mt-2 text-sm text-text-muted">Lawrence, Kansas</p>
               </article>
             </aside>
 
